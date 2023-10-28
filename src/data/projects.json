@@ -1,0 +1,41 @@
+[
+  {
+    "name": "Pikxr - Social Media Website",
+    "imgSrc": "/pikxr-home.png",
+    "description": "Pikxr is a social media platform where users can connect, share, and discover their world through the power of visual storytelling. Withfundamental features such as basic user authentication, the ability to post, manage stories, and follow/unfollow users, Pikxr offers astraightforward and engaging social experience.",
+    "about": "Pikxr is a passion project that I've poured my heart and soul into. It's a social media website that I developed with the goal of creating a dynamic and visually engaging platform for users to connect, share, and discover moments that matter most to them.",
+    "features": [
+      {
+        "title": "Visual Storytelling",
+        "description": "Pikxr is all about visual content. Users can share photos and videos, creating captivating narratives that capture the essence of their experiences."
+      },
+      {
+        "title": "User-Friendly Interface",
+        "description": "The platform boasts a sleek and intuitive user interface that ensures a seamless and enjoyable experience for users of all backgrounds."
+      },
+      {
+        "title": "Customizable Profiles",
+        "description": " Users can personalize their profiles, allowing them to express themselves and showcase their unique style and personality."
+      },
+      {
+        "title": "Follow and Connect",
+        "description": "Pikxr enables users to connect with friends, family, and like-minded individuals. They can follow their favorite creators, stay updated on their activities, and engage through comments and likes."
+      },
+      {
+        "title": "Security and Privacy",
+        "description": "Pikxr takes user privacy and data security seriously, ensuring that personal information is safeguarded."
+      }
+    ],
+    "contribution": "As the sole developer of Pikxr, I conceptualized, designed, and built the entire platform from the ground up. This included frontend and backend development, database management, and security protocols to protect user data. I also handled UI/UX design, ensuring a smooth and engaging user experience.",
+    "future": "I am committed to enhancing Pikxr continually. In the pipeline are exciting features like infinite scrolling for seamless content discovery and a chat feature to connect users in real-time to keep the platform fresh and exciting.",
+    "stack": [
+      { "name": "React", "icon": "fa-brands fa-react" },
+      { "name": "Node", "icon": "fa-brands fa-node" },
+      { "name": "Express", "icon": "fa-brands fa-node-js" },
+      { "name": "MongoDB", "icon": "fa-solid fa-database" },
+      { "name": "CSS Modules", "icon": "fa-brands fa-css3-alt" }
+    ],
+    "githubLink": "http://github.com/greatochuko/pikxr-client",
+    "websiteLink": "http://pikxr.onrender.com"
+  }
+]

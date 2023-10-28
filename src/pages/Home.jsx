@@ -1,26 +1,8 @@
 import profilePic from "../assets/profile-pic.jpg";
-import pikxrImage from "../assets/pikxr-home.png";
 import resume from "../assets/resume.pdf";
 import { Link } from "react-router-dom";
 import Project from "../components/Project";
-
-const projects = [
-  {
-    name: "Pikxr - A Social Media Website",
-    imgSrc: pikxrImage,
-    description:
-      "Pikxr is a social media platform where users can connect, share, and discover their world through the power of visual storytelling. Withfundamental features such as basic user authentication, the ability to post, manage stories, and follow/unfollow users, Pikxr offers astraightforward and engaging social experience.",
-    stack: [
-      { name: "React", icon: "fa-brands fa-react" },
-      { name: "Node", icon: "fa-brands fa-node" },
-      { name: "Express", icon: "fa-brands fa-node-js" },
-      { name: "MongoDB", icon: "fa-solid fa-database" },
-      { name: "CSS Modules", icon: "fa-brands fa-css3-alt" },
-    ],
-    githubLink: "http://github.com/greatochuko/pikxr-client",
-    websiteLink: "http://pikxr.onrender.com",
-  },
-];
+import projects from "../data/projects.json";
 
 export default function Home() {
   const now = new Date().toLocaleTimeString();
