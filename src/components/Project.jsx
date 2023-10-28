@@ -1,9 +1,23 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 export default function Project({ project }) {
+  const [loading, setLoading] = useState(true);
+  console.log(loading);
+
   return (
     <div className="flex flex-col my-4 gap-2 border p-2 rounded-lg shadow-lg">
-      <img src={project.imgSrc} alt="" className="rounded-lg shadow-lg" />
+      <div className="relative min-h-[350px]">
+        <img
+          src={project.imgSrc}
+          alt=""
+          onLoad={() => setLoading(false)}
+          className={`duration-300 ${loading ? "opacity-0" : "opacity-100"}`}
+        />
+        {loading ? (
+          <div className="w-full h-full top-0 absolute rounded-md animate-pulse  bg-neutral-500"></div>
+        ) : null}
+      </div>
       <h2 className="text-lg font-semibold text-zinc-800 mt-2">
         {project.name}
       </h2>
