@@ -11,7 +11,7 @@ export default function Project({ project }) {
       <p className="text-zinc-800">
         {project.description}
         <Link
-          to={`/projects/${project.name}`}
+          to={`/projects/${project.url}`}
           className="text-blue-500 ml-2 hover:underline"
         >
           See More
