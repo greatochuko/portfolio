@@ -1,0 +1,52 @@
+[
+  {
+    "name": "JavaScript",
+    "category": "programming",
+    "imageUrl": "/public/javascript-logo.png"
+  },
+  {
+    "name": "HTML",
+    "category": "programming",
+    "imageUrl": "/public/html-logo.png"
+  },
+  {
+    "name": "CSS",
+    "category": "programming",
+    "imageUrl": "/public/css-logo.png"
+  },
+  {
+    "name": "React",
+    "category": "programming",
+    "imageUrl": "/public/react-logo.png"
+  },
+  {
+    "name": "Node JS",
+    "category": "programming",
+    "imageUrl": "/public/node-logo.png"
+  },
+  {
+    "name": "Express JS",
+    "category": "programming",
+    "imageUrl": "/public/express-logo.png"
+  },
+  {
+    "name": "Vs Code",
+    "category": "other",
+    "imageUrl": "/public/vscode-logo.png"
+  },
+  {
+    "name": "MicroSoft One Note",
+    "category": "other",
+    "imageUrl": "/public/onenote-logo.png"
+  },
+  {
+    "name": "Spotify",
+    "category": "other",
+    "imageUrl": "/public/spotify-logo.png"
+  },
+  {
+    "name": "Mongo DB",
+    "category": "database",
+    "imageUrl": "/public/mongodb-logo.png"
+  }
+]

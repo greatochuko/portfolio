@@ -8,15 +8,7 @@ export default function Project({ project }) {
         {project.name}
       </h2>
 
-      <p className="text-zinc-800">
-        {project.description}
-        <Link
-          to={`/projects/${project.name}`}
-          className="text-blue-500 ml-2 hover:underline"
-        >
-          See More
-        </Link>
-      </p>
+      <p className="text-zinc-800">{project.description}</p>
       <div className="grid grid-cols-3 gap-y-4 my-2">
         {project.stack.map((tool) => (
           <p

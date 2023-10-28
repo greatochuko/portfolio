@@ -1,6 +1,6 @@
 import NavLink from "./NavLink";
 const navElements = [
-  { icon: "fa-solid fa-house", title: "Home", to: "/" },
+  { icon: "fa-solid fa-house", title: "Home", to: "#" },
   { icon: "fa-solid fa-cube", title: "Projects", to: "/projects/pikxr" },
   { icon: "fa-solid fa-layer-group", title: "Stack", to: "/stack" },
   { icon: "fa-solid fa-envelope", title: "Contact", to: "/contact" },
@@ -8,11 +8,11 @@ const navElements = [
 
 export default function Navbar() {
   return (
-    <header className="bottom-0 fixed">
-      <nav className=" w-screen border-t bg-white border z-10">
-        <ul className="flex justify-between px-4 gap-2 ">
+    <header className="sticky top-0">
+      <nav className=" border-t bg-white border z-10">
+        <ul className="flex justify-between max-w-2xl mx-auto px-4 gap-4 ">
           {navElements.map((el, i) => (
-            <NavLink el={el} key={i} />
+            <NavLink link={el} key={i} />
           ))}
         </ul>
       </nav>

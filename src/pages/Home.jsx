@@ -2,25 +2,10 @@ import profilePic from "../assets/profile-pic.jpg";
 import pikxrImage from "../assets/pikxr-home.png";
 import resume from "../assets/resume.pdf";
 import { Link } from "react-router-dom";
-import Project from "../components/Project";
-
-const projects = [
-  {
-    name: "Pikxr - A Social Media Website",
-    imgSrc: pikxrImage,
-    description:
-      "Pikxr is a social media platform where users can connect, share, and discover their world through the power of visual storytelling. Withfundamental features such as basic user authentication, the ability to post, manage stories, and follow/unfollow users, Pikxr offers astraightforward and engaging social experience.",
-    stack: [
-      { name: "React", icon: "fa-brands fa-react" },
-      { name: "Node", icon: "fa-brands fa-node" },
-      { name: "Express", icon: "fa-brands fa-node-js" },
-      { name: "MongoDB", icon: "fa-solid fa-database" },
-      { name: "CSS Modules", icon: "fa-brands fa-css3-alt" },
-    ],
-    githubLink: "http://github.com/greatochuko/pikxr-client",
-    websiteLink: "http://pikxr.onrender.com",
-  },
-];
+import Contact from "../components/Contact";
+import Stack from "../components/Stack";
+import About from "../components/About";
+import Projects from "../components/Projects";
 
 export default function Home() {
   const now = new Date().toLocaleTimeString();
@@ -91,34 +76,12 @@ export default function Home() {
       >
         Download my Resume <i className="fa-solid fa-file-arrow-down"></i>
       </a>
-      <section className="flex flex-col gap-2 text-zinc-700 text-[15px] font-normal my-2">
-        <h3 className="text-center mb-2 mt-5 font-bold">About</h3>
-        <div className="flex flex-col gap-4">
-          <p>
-            I&apos;m Great Ogheneochuko, a full-stack developer based in
-            Nigeria.
-          </p>
-          <p>
-            With 3 years of experience in the field, I bring a unique blend of
-            expertise to the table. With a solid foundation in React, Express,
-            Node, MogoDB, and Python.
-          </p>
-          <p>
-            I have crafted impressive full-stack projects that demonstrate my
-            capabilities. My passion lies in creating seamless, user-friendly
-            experiences and overcoming the challenges of complex web
-            applications.
-          </p>
-        </div>
-      </section>
-      <section className="my-2">
-        <h3 className="text-center mb-2 mt-5 font-bold text-zinc-700">
-          Projects
-        </h3>
-        {projects.map((project, i) => (
-          <Project key={i} project={project} />
-        ))}
-      </section>
+      <About />
+
+      <Stack />
+      <Projects />
+
+      <Contact />
     </div>
   );
 }
