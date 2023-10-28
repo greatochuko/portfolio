@@ -1,7 +1,7 @@
 import NavLink from "./NavLink";
 const navElements = [
   { icon: "fa-solid fa-house", title: "Home", to: "/" },
-  { icon: "fa-solid fa-cube", title: "Projects", to: "/projects" },
+  { icon: "fa-solid fa-cube", title: "Projects", to: "/projects/pikxr" },
   { icon: "fa-solid fa-layer-group", title: "Stack", to: "/stack" },
   { icon: "fa-solid fa-envelope", title: "Contact", to: "/contact" },
 ];

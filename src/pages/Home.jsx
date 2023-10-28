@@ -2,6 +2,25 @@ import profilePic from "../assets/profile-pic.jpg";
 import pikxrImage from "../assets/pikxr-home.png";
 import resume from "../assets/resume.pdf";
 import { Link } from "react-router-dom";
+import Project from "../components/Project";
+
+const projects = [
+  {
+    name: "Pikxr - A Social Media Website",
+    imgSrc: pikxrImage,
+    description:
+      "Pikxr is a social media platform where users can connect, share, and discover their world through the power of visual storytelling. Withfundamental features such as basic user authentication, the ability to post, manage stories, and follow/unfollow users, Pikxr offers astraightforward and engaging social experience.",
+    stack: [
+      { name: "React", icon: "fa-brands fa-react" },
+      { name: "Node", icon: "fa-brands fa-node" },
+      { name: "Express", icon: "fa-brands fa-node-js" },
+      { name: "MongoDB", icon: "fa-solid fa-database" },
+      { name: "CSS Modules", icon: "fa-brands fa-css3-alt" },
+    ],
+    githubLink: "http://github.com/greatochuko/pikxr-client",
+    websiteLink: "http://pikxr.onrender.com",
+  },
+];
 
 export default function Home() {
   const now = new Date().toLocaleTimeString();
@@ -29,6 +48,7 @@ export default function Home() {
           href="http://twitter.com/greatochuko123"
           target="_blank"
           rel="noopener noreferrer"
+          className="hover:text-zinc-800 duration-150 p-2"
         >
           <i className="fa-brands fa-x-twitter"></i>
         </a>
@@ -36,6 +56,7 @@ export default function Home() {
           href="http://github.com/greatochuko"
           target="_blank"
           rel="noopener noreferrer"
+          className="hover:text-zinc-800 duration-150 p-2"
         >
           <i className="fa-brands fa-github"></i>
         </a>
@@ -43,6 +64,7 @@ export default function Home() {
           href="http://linkedin.com/in/greatochuko123"
           target="_blank"
           rel="noopener noreferrer"
+          className="hover:text-zinc-800 duration-150 p-2"
         >
           <i className="fa-brands fa-linkedin-in"></i>
         </a>
@@ -93,24 +115,10 @@ export default function Home() {
         <h3 className="text-center mb-2 mt-5 font-bold text-zinc-700">
           Projects
         </h3>
-        <Link>
-          <div className="p-4 bg-zinc-100  rounded-lg transition-transform duration-300 hover:-translate-y-1">
-            <h4 className="text-zinc-800 mb-3">
-              <i className="fa-solid fa-cube mr-2 text-zinc-600"></i>Pikxr -
-              Social Media Website
-            </h4>
-            <div className="overflow-hidden rounded-lg">
-              <img src={pikxrImage} alt="" />
-            </div>
-          </div>
-        </Link>
+        {projects.map((project, i) => (
+          <Project key={i} project={project} />
+        ))}
       </section>
-      <Link
-        to={"/projects"}
-        className="text-center bg-zinc-200 hover:bg-zinc-300 duration-300 w-full p-2 m-4 rounded-xl border border-zinc-300  text-zinc-600 hover:text-zinc-800"
-      >
-        View all <i className="fa-solid fa-arrow-right-long"></i>
-      </Link>
     </div>
   );
 }
