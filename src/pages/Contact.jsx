@@ -1,4 +1,45 @@
+import emailjs from "@emailjs/browser";
+import { useRef, useState } from "react";
+
 export default function Contact() {
+  const form = useRef();
+  const [loading, setLoading] = useState(false);
+
+  async function sendEmail(e) {
+    e.preventDefault();
+    setLoading(true);
+    try {
+      await emailjs.sendForm(
+        "service_c7zszyp",
+        "template_a2m94gf",
+        form.current,
+        "xI59AIFZh8TlGx7Vp"
+      );
+    } catch (err) {
+      console.log(err.text);
+    } finally {
+      setLoading(false);
+    }
+
+    // emailjs
+    //   .sendForm(
+    //     "service_c7zszyp",
+    //     "template_a2m94gf",
+    //     form.current,
+    //     "xI59AIFZh8TlGx7Vp"
+    //   )
+    //   .then(
+    //     (result) => {
+    //       console.log(result.text);
+    //     },
+    //     (error) => {
+    //       console.log(error.text);
+    //     }
+    //   )
+    //   .finally(() => {
+    //     setLoading(false);
+    //   });
+  }
   return (
     <main className=" p-[4vw] max-w-2xl mx-auto ">
       <h1 className="text-2xl mb-2">Contact</h1>
@@ -42,7 +83,11 @@ export default function Contact() {
         </a>
       </div>
       <p className="text-center text-zinc-400">or</p>
-      <form className="grid grid-cols-2 gap-y-[2vh] gap-x-2">
+      <form
+        ref={form}
+        onSubmit={sendEmail}
+        className="grid grid-cols-2 gap-y-[2vh] gap-x-2"
+      >
         <input
           type="text"
           name="name"
@@ -63,9 +108,10 @@ export default function Contact() {
           rows="10"
         ></textarea>
         <input
-          className="p-4 cursor-pointer text-white col-span-2 rounded-md bg-zinc-800 mt"
+          className="p-4 cursor-pointer text-white col-span-2 rounded-md bg-zinc-800 mt disabled:cursor-not-allowed disabled:opacity-50"
           type="submit"
-          value="Send"
+          value={loading ? "Sending" : "Send"}
+          disabled={loading}
         />
       </form>
     </main>
