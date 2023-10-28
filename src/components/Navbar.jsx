@@ -8,8 +8,8 @@ const navElements = [
 
 export default function Navbar() {
   return (
-    <header>
-      <nav className="bottom-0 fixed w-screen border-t bg-white border border-t">
+    <header className="bottom-0 fixed">
+      <nav className=" w-screen border-t bg-white border z-10">
         <ul className="flex justify-between px-4 gap-2 ">
           {navElements.map((el, i) => (
             <NavLink el={el} key={i} />
