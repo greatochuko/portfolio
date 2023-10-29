@@ -3,11 +3,6 @@ import projects from "../data/projects.json";
 
 export default function ProjectDetail() {
   const { projectName } = useParams();
-  // const project = projects.find((project) =>
-  //   project.name.toLowerCase().includes(projectName)
-  // );
-
-  console.log(projectName);
 
   const project = projects.find((project) =>
     project.name.toLowerCase().includes("pikxr")

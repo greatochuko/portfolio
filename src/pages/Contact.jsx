@@ -66,7 +66,7 @@ export default function Contact() {
         </a>
         <a
           className="border border-zinc-200 p-4 rounded-lg bg-zinc-100 hover:bg-zinc-200 hover:border-zinc-200 transition-all"
-          href="http://twitter.com/greatochuko123"
+          href="https://twitter.com/greatochuko123"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -75,7 +75,7 @@ export default function Contact() {
 
         <a
           className="border border-zinc-200 p-4 rounded-lg bg-zinc-100 hover:bg-zinc-200 hover:border-zinc-200 transition-all"
-          href="http://linkedin.com/in/greatochuko123"
+          href="https://linkedin.com/in/greatochuko123"
           target="_blank"
           rel="noopener noreferrer"
         >

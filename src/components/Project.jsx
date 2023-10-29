@@ -3,11 +3,14 @@ import { Link } from "react-router-dom";
 
 export default function Project({ project }) {
   const [loading, setLoading] = useState(true);
-  console.log(loading);
 
   return (
-    <div className="flex flex-col my-4 gap-2 border p-2 rounded-lg shadow-lg">
-      <div className="relative min-h-[350px]">
+    <div className="flex flex-col my-4 gap-2 border p-2 rounded-lg shadow-lg ">
+      <div
+        className={`relative ${
+          loading ? "sm:min-h-[350px] min-h-[200px]" : ""
+        }`}
+      >
         <img
           src={project.imgSrc}
           alt=""
@@ -35,9 +38,9 @@ export default function Project({ project }) {
         {project.stack.map((tool) => (
           <p
             key={tool.name}
-            className="flex flex-col items-center w-24 min-w-fit"
+            className={`flex flex-col items-center w-24 min-w-fit`}
           >
-            <i className={`${tool.icon} text-xl`}></i>
+            <i className={`${tool.icon} text-2xl`}></i>
             {tool.name}
           </p>
         ))}

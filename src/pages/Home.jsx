@@ -27,7 +27,7 @@ export default function Home() {
       </p>
       <div className="flex gap-4 my-4 text-xl text-zinc-500">
         <a
-          href="http://twitter.com/greatochuko123"
+          href="https://twitter.com/greatochuko123"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-zinc-800 duration-150 p-2"
@@ -35,7 +35,7 @@ export default function Home() {
           <i className="fa-brands fa-x-twitter"></i>
         </a>
         <a
-          href="http://github.com/greatochuko"
+          href="https://github.com/greatochuko"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-zinc-800 duration-150 p-2"
@@ -43,7 +43,7 @@ export default function Home() {
           <i className="fa-brands fa-github"></i>
         </a>
         <a
-          href="http://linkedin.com/in/greatochuko123"
+          href="https://linkedin.com/in/greatochuko123"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-zinc-800 duration-150 p-2"

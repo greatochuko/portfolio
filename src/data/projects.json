@@ -36,7 +36,7 @@
       { "name": "MongoDB", "icon": "fa-solid fa-database" },
       { "name": "CSS Modules", "icon": "fa-brands fa-css3-alt" }
     ],
-    "githubLink": "http://github.com/greatochuko/pikxr-client",
-    "websiteLink": "http://pikxr.onrender.com"
+    "githubLink": "https://github.com/greatochuko/pikxr-client",
+    "websiteLink": "https://pikxr.onrender.com"
   }
 ]
