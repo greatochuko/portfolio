@@ -30,9 +30,19 @@
     "imageUrl": "/express-logo.png"
   },
   {
+    "name": "Tailwind Css",
+    "category": "programming",
+    "imageUrl": "/tailwind-logo.png"
+  },
+  {
     "name": "Vs Code",
     "category": "other",
     "imageUrl": "/vscode-logo.png"
+  },
+  {
+    "name": "Git",
+    "category": "other",
+    "imageUrl": "/git-logo.png"
   },
   {
     "name": "MicroSoft One Note",

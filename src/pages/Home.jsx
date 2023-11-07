@@ -12,7 +12,7 @@ export default function Home() {
   const date = `${dateArr.join(":")} ${hourTime}`;
 
   return (
-    <div className="flex flex-col items-center h-fit max-w-2xl mx-auto p-4">
+    <div className="flex flex-col items-center h-fit max-w-xl mx-auto p-4">
       <p className="my-8 font-mono text-zinc-500">{date}</p>
       <img
         src={profilePic}
@@ -81,9 +81,9 @@ export default function Home() {
             Nigeria.
           </p>
           <p>
-            With 3 years of experience in the field, I bring a unique blend of
-            expertise to the table. With a solid foundation in React, Express,
-            Node, MogoDB, and Python.
+            I am a dynamic full-stack software developer with a year of
+            experience and a solid foundation in React, Express.js, Node.js,
+            MogoDB, and Redux.
           </p>
           <p>
             I have crafted impressive full-stack projects that demonstrate my

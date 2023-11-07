@@ -20,25 +20,6 @@ export default function Contact() {
     } finally {
       setLoading(false);
     }
-
-    // emailjs
-    //   .sendForm(
-    //     "service_c7zszyp",
-    //     "template_a2m94gf",
-    //     form.current,
-    //     "xI59AIFZh8TlGx7Vp"
-    //   )
-    //   .then(
-    //     (result) => {
-    //       console.log(result.text);
-    //     },
-    //     (error) => {
-    //       console.log(error.text);
-    //     }
-    //   )
-    //   .finally(() => {
-    //     setLoading(false);
-    //   });
   }
   return (
     <main className=" p-[4vw] max-w-2xl mx-auto ">

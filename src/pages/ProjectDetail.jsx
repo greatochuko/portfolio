@@ -9,15 +9,35 @@ export default function ProjectDetail() {
   );
 
   return (
-    <main className="flex flex-col gap-y-3 max-w-2xl mx-auto p-4 text-zinc-700">
-      <h1 className="text-xl my-4 underline underline-offset-4 font-semibold">
-        {project.name}
-      </h1>
+    <main className="flex mt-6 flex-col gap-y-3 max-w-xl mx-auto p-4 text-zinc-700">
       <img
         src={project.imgSrc}
         alt={projectName}
-        className="rounded-xl shadow-lg"
+        className="rounded-lg shadow-lg"
       />
+      <h1 className="text-xl underline underline-offset-4 font-semibold">
+        {project.name}
+      </h1>
+      <div className="flex gap-4">
+        <a
+          href={project.githubLink}
+          className="py-2 px-4 text-sm bg-zinc-100 hover:bg-zinc-200 hover:border-zinc-300 duration-200 border border-zinc-200 rounded-md"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i className="fa-brands fa-github mr-2"></i>
+          Inspect Source Code
+        </a>
+        <a
+          href={project.websiteLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="py-2 px-4 text-sm bg-zinc-100 hover:bg-zinc-200 hover:border-zinc-300 duration-200 border border-zinc-200 rounded-md"
+        >
+          <i className="fa-solid fa-desktop mr-2"></i>View Live Website
+        </a>
+      </div>
+
       <h2 className="text-xl font-semibold mt-5">About</h2>
       <p>{project.about}</p>
       <h2 className="text-xl font-semibold mt-5">Key Features</h2>
