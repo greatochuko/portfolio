@@ -58,14 +58,14 @@ export default function Home() {
       <div className="flex gap-3 items-center text-zinc-700 dark:text-zinc-200">
         <Link
           to={"tel:+2347048078103"}
-          className="border border-zinc-200 px-10 py-2 rounded-lg bg-zinc-100 dark:bg-zinc-800 dark:border-zinc-600"
+          className="border border-zinc-200 px-4 md:px-10 py-2 rounded-lg bg-zinc-100 dark:bg-zinc-800 dark:border-zinc-600"
         >
           Call me <i className="fa-solid fa-phone-flip"></i>
         </Link>
         or
         <Link
           to={"mailto:greatochuko123@gmail.com"}
-          className="border border-zinc-200 px-10 py-2 rounded-lg bg-zinc-100 dark:bg-zinc-800 dark:border-zinc-600"
+          className="border border-zinc-200 px-4 md:px-10 py-2 rounded-lg bg-zinc-100 dark:bg-zinc-800 dark:border-zinc-600"
         >
           Email me <i className="fa-regular fa-envelope"></i>
         </Link>
