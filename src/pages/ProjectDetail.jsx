@@ -18,7 +18,7 @@ export default function ProjectDetail() {
       <h1 className="text-xl underline underline-offset-4 font-semibold">
         {project.name}
       </h1>
-      <div className="flex gap-4">
+      <div className="flex gap-4 flex-wrap">
         <a
           href={project.githubLink}
           className="py-2 px-4 text-sm bg-zinc-100 dark:bg-zinc-800 dark:border-zinc-700 dark:hover:bg-zinc-700 dark:hover:border-zinc-600 hover:bg-zinc-200 hover:border-zinc-300 duration-200 border border-zinc-200 rounded-md"
