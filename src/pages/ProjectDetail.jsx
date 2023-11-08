@@ -9,7 +9,7 @@ export default function ProjectDetail() {
   );
 
   return (
-    <main className="flex mt-6 flex-col gap-y-3 max-w-xl mx-auto p-4 text-zinc-700">
+    <main className="flex mt-6 flex-col gap-y-3 max-w-xl mx-auto p-4 text-zinc-700 dark:text-zinc-200">
       <img
         src={project.imgSrc}
         alt={projectName}
@@ -21,7 +21,7 @@ export default function ProjectDetail() {
       <div className="flex gap-4">
         <a
           href={project.githubLink}
-          className="py-2 px-4 text-sm bg-zinc-100 hover:bg-zinc-200 hover:border-zinc-300 duration-200 border border-zinc-200 rounded-md"
+          className="py-2 px-4 text-sm bg-zinc-100 dark:bg-zinc-800 dark:border-zinc-700 dark:hover:bg-zinc-700 dark:hover:border-zinc-600 hover:bg-zinc-200 hover:border-zinc-300 duration-200 border border-zinc-200 rounded-md"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -32,7 +32,7 @@ export default function ProjectDetail() {
           href={project.websiteLink}
           target="_blank"
           rel="noopener noreferrer"
-          className="py-2 px-4 text-sm bg-zinc-100 hover:bg-zinc-200 hover:border-zinc-300 duration-200 border border-zinc-200 rounded-md"
+          className="py-2 px-4 text-sm bg-zinc-100 dark:bg-zinc-800 dark:border-zinc-700 dark:hover:bg-zinc-700 dark:hover:border-zinc-600 hover:bg-zinc-200 hover:border-zinc-300 duration-200 border border-zinc-200 rounded-md"
         >
           <i className="fa-solid fa-desktop mr-2"></i>View Live Website
         </a>

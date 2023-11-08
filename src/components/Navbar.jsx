@@ -9,7 +9,7 @@ const navElements = [
 export default function Navbar() {
   return (
     <header className="bottom-0 fixed lg:left-0">
-      <nav className=" w-screen border-t bg-white border z-10 lg:w-fit lg:h-screen">
+      <nav className=" w-screen border-t bg-white dark:bg-zinc-900 dark:border-zinc-800 border z-10 lg:w-fit lg:h-screen">
         <ul className="flex max-w-xl mx-auto justify-between px-4 gap-2 lg:flex-col lg:justify-center h-full">
           {navElements.map((link, i) => (
             <NavLink link={link} key={i} />
