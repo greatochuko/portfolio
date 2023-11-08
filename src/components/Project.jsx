@@ -21,7 +21,7 @@ export default function Project({ project }) {
           src={project.imgSrc}
           alt=""
           onLoad={() => setLoading(false)}
-          className={`duration-300 ${
+          className={` ${
             loading ? "opacity-0" : "opacity-100"
           } group-hover:scale-105 duration-500 `}
         />
