@@ -56,7 +56,7 @@ export default function Contact() {
 
         <a
           className="border border-zinc-200 dark:border-zinc-700 dark:bg-zinc-800 dark:text-zinc-200 dark:hover:bg-zinc-700 dark:hover:border-zinc-600 p-4 rounded-lg bg-zinc-100 hover:bg-zinc-200 hover:border-zinc-200 transition-all"
-          href="https://linkedin.com/in/greatochuko123"
+          href="https://linkedin.com/in/greatochuko"
           target="_blank"
           rel="noopener noreferrer"
         >
