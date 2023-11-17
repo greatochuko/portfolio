@@ -12,7 +12,7 @@ export default function Home() {
   const date = `${dateArr.join(":")} ${hourTime}`;
 
   return (
-    <div className="flex flex-col items-center max-w-xl p-4 mx-auto h-fit ">
+    <div className="flex flex-col items-center max-w-2xl p-4 mx-auto h-fit ">
       <p className="my-8 font-mono text-zinc-500 dark:text-zinc-200">{date}</p>
       <img
         src={profilePic}
@@ -97,7 +97,7 @@ export default function Home() {
           </p>
         </div>
       </section>
-      <section className="my-2">
+      <section className="flex flex-col gap-2 my-2">
         <h3 className="mt-5 mb-2 font-bold text-center text-zinc-700 dark:text-zinc-200">
           Projects
         </h3>

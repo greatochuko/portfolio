@@ -38,5 +38,41 @@
     ],
     "githubLink": "https://github.com/greatochuko/pikxr-client",
     "websiteLink": "https://pikxr.onrender.com"
+  },
+  {
+    "url": "web-dev-stories",
+    "name": "Web Dev Stories - Blog Website",
+    "imgSrc": "/web-dev-stories.png",
+    "description": "Web-Dev-Stories is not just another blog—it's a vibrant online hub where the intricate tales of web development come to life. Dive into the world of coding adventures, tips, and triumphs as you connect with a community passionate about crafting the digital realm.",
+    "about": "Web-Dev-Stories is a blog platform dedicated to the narratives of web development. Dive into a straightforward space where you can easily share and manage your coding experiences. Connect with fellow developers, whether you're a seasoned pro or just beginning your journey. Join us at Web-Dev-Stories to explore the diverse stories that shape the world of web development.",
+    "features": [
+      {
+        "title": "BlogPost Creation",
+        "description": "Users can easily compose and publish their web development stories. The process is designed to be intuitive, allowing users to input their content, add relevant details, and publish with minimal friction."
+      },
+      {
+        "title": "BlogPost Management",
+        "description": "Once a story is published, users have the ability to manage their content. This includes options to edit, update, or delete stories as needed. The platform provides a user-friendly interface for efficient content management."
+      },
+      {
+        "title": "Inspiration and Learning",
+        "description": "Web-Dev-Stories is a platform committed to fostering inspiration and learning within the web development community. By hosting a diverse array of narratives, from beginner experiences to advanced challenges, the platform provides users with real-world insights. Through community interaction, users engage in discussions, comment on posts, and share practical knowledge, creating an inclusive and collaborative learning environment. With a focus on genuine exploration, Web-Dev-Stories aims to be a space where developers at all skill levels can share their authentic experiences, offering a valuable source of inspiration and supporting continuous learning in the dynamic field of web development."
+      },
+      {
+        "title": "User Authentication",
+        "description": "Web-Dev-Stories offers a secure and user-friendly environment with features such as robust User Authentication. Once registered, users can effortlessly create, manage, and engage with their web development blog posts. The platform's streamlined post creation process and content management system provide a straightforward experience, allowing users to share coding experiences without technical hurdles."
+      }
+    ],
+    "contribution": "As the sole developer behind Web-Dev-Stories, I envisioned, crafted, and brought the entire platform to life. From ideation to execution, I took charge of both frontend and backend development, delving into database management, and implementing robust security measures to safeguard user data. Not to mention, I wore the hat of a UI/UX designer, meticulously crafting an interface that ensures a seamless and captivating user experience. It's not just a platform; it's a labor of love in every line of code, aimed at making the web development storytelling experience as smooth and engaging as possible.",
+    "stack": [
+      { "name": "React", "icon": "fa-brands fa-react" },
+      { "name": "React", "icon": "fa-brands fa-react" },
+      { "name": "Node", "icon": "fa-brands fa-node" },
+      { "name": "Express", "icon": "fa-brands fa-node-js" },
+      { "name": "MongoDB", "icon": "fa-solid fa-database" },
+      { "name": "Tailwind CSS", "icon": "fa-solid fa-file-code" }
+    ],
+    "githubLink": "https://github.com/greatochuko/web-dev-stories",
+    "websiteLink": "https://web-dev-stories.vercel.app"
   }
 ]
