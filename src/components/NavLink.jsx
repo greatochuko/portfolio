@@ -6,7 +6,7 @@ export default function NavLink({ link }) {
   const { pathname } = useLocation();
   return (
     <li
-      className="flex relative"
+      className="relative flex"
       id={link.title}
       onMouseEnter={() => setHoverStyles("opacity-100")}
       onMouseLeave={() => setHoverStyles("opacity-0")}
