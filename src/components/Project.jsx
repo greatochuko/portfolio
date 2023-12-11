@@ -7,7 +7,7 @@ export default function Project({ project }) {
   return (
     <Link
       to={`/projects/${project.url}`}
-      className="group flex flex-col my-4 gap-2 border p-2 rounded-lg border-zinc-200 dark:border-zinc-800 dark:hover:bg-zinc-800 duration-500 hover:bg-zinc-100"
+      className="flex flex-col gap-2 p-2 my-4 duration-500 border rounded-lg group focus-visible:ring ring-white border-zinc-200 dark:border-zinc-800 dark:hover:bg-zinc-800 hover:bg-zinc-100"
     >
       <h2 className="text-md font-[500] text-zinc-700 dark:text-zinc-200">
         {project.name}
@@ -26,7 +26,7 @@ export default function Project({ project }) {
           } group-hover:scale-105 duration-500 `}
         />
         {loading ? (
-          <div className="w-full h-full top-0 absolute rounded-md animate-pulse  bg-neutral-500"></div>
+          <div className="absolute top-0 w-full h-full rounded-md animate-pulse bg-neutral-500"></div>
         ) : null}
       </div>
     </Link>

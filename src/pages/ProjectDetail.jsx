@@ -1,9 +1,11 @@
 import { useParams } from "react-router-dom";
 import projects from "../data/projects.json";
 import Project from "../components/Project";
+import useScrollRefresh from "../hooks/useScrollRefresh";
 
 export default function ProjectDetail() {
   const { projectName } = useParams();
+  useScrollRefresh();
 
   const project = projects.find((project) => project.url === projectName);
 
@@ -13,7 +15,7 @@ export default function ProjectDetail() {
         <img
           src={project.imgSrc}
           alt={projectName}
-          className="rounded-lg shadow-lg"
+          className="rounded-md shadow-lg"
         />
         <h1 className="text-xl font-semibold underline underline-offset-4">
           {project.name}
@@ -21,7 +23,7 @@ export default function ProjectDetail() {
         <div className="flex flex-wrap gap-4">
           <a
             href={project.githubLink}
-            className="px-4 py-2 text-sm duration-200 border rounded-md bg-zinc-100 dark:bg-zinc-800 dark:border-zinc-700 dark:hover:bg-zinc-700 dark:hover:border-zinc-600 hover:bg-zinc-200 hover:border-zinc-300 border-zinc-200"
+            className="px-4 py-2 text-sm duration-200 border rounded-md bg-zinc-100 dark:bg-zinc-800 dark:border-zinc-700 dark:hover:bg-zinc-700 dark:hover:border-zinc-600 hover:bg-zinc-200 focus-visible:ring ring-white hover:border-zinc-300 border-zinc-200"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -32,7 +34,7 @@ export default function ProjectDetail() {
             href={project.websiteLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="px-4 py-2 text-sm duration-200 border rounded-md bg-zinc-100 dark:bg-zinc-800 dark:border-zinc-700 dark:hover:bg-zinc-700 dark:hover:border-zinc-600 hover:bg-zinc-200 hover:border-zinc-300 border-zinc-200"
+            className="px-4 py-2 text-sm duration-200 border rounded-md bg-zinc-100 dark:bg-zinc-800 dark:border-zinc-700 dark:hover:bg-zinc-700 dark:hover:border-zinc-600 hover:bg-zinc-200 focus-visible:ring ring-white hover:border-zinc-300 border-zinc-200"
           >
             <i className="mr-2 fa-solid fa-desktop"></i>View Live Website
           </a>

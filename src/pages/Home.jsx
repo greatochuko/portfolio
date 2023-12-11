@@ -3,6 +3,7 @@ import resume from "../assets/resume.pdf";
 import { Link } from "react-router-dom";
 import Project from "../components/Project";
 import projects from "../data/projects.json";
+import useScrollRefresh from "../hooks/useScrollRefresh";
 
 export default function Home() {
   const now = new Date().toLocaleTimeString();
@@ -10,6 +11,7 @@ export default function Home() {
   const dateArr = now.split(":");
   dateArr.splice(dateArr.length - 1, 1);
   const date = `${dateArr.join(":")} ${hourTime}`;
+  useScrollRefresh();
 
   return (
     <div className="flex flex-col items-center max-w-2xl p-4 mx-auto h-fit ">
@@ -86,8 +88,8 @@ export default function Home() {
           </p>
           <p>
             I am a dynamic full-stack software developer with a year of
-            experience and a solid foundation in React, Express.js, Node.js,
-            MogoDB, and Redux.
+            experience and a solid foundation in JavaScript, TypeScript, React,
+            Express.js, Node.js, MogoDB, and Redux.
           </p>
           <p>
             I have crafted impressive full-stack projects that demonstrate my

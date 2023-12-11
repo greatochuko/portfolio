@@ -4,7 +4,7 @@ import Footer from "../components/Footer";
 
 export default function AppLayout() {
   return (
-    <div className="pb-20 min-h-screen flex flex-col lg:pb-4 dark:bg-zinc-900 ">
+    <div className="flex flex-col min-h-screen pb-20 lg:pb-4 dark:bg-zinc-900 ">
       <Navbar />
       <Outlet />
       <Footer />
