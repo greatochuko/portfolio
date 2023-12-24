@@ -1,8 +1,6 @@
 import stack from "../data/stack.json";
-import useScrollRefresh from "../hooks/useScrollRefresh";
 
 export default function Stack() {
-  useScrollRefresh();
 
   return (
     <main className=" p-[4vw] max-w-2xl mx-auto">
@@ -19,11 +17,11 @@ export default function Stack() {
             .map((tool) => (
               <div
                 key={tool.name}
-                className="flex flex-col items-center justify-center gap-2 p-4  bg-zinc-100 dark:bg-zinc-800 rounded-xl aspect-square"
+                className="flex flex-col items-center justify-center gap-2 p-4 bg-zinc-100 dark:bg-zinc-800 rounded-xl aspect-square"
               >
                 <img src={tool.imageUrl} alt="" className="w-[50%] mx-auto" />
 
-                <h2 className="font-semibold  text-zinc-700 dark:text-zinc-200">
+                <h2 className="font-semibold text-zinc-700 dark:text-zinc-200">
                   {tool.name}
                 </h2>
               </div>
@@ -40,11 +38,11 @@ export default function Stack() {
             .map((tool) => (
               <div
                 key={tool.name}
-                className="flex flex-col items-center justify-center gap-2 p-4  bg-zinc-100 dark:bg-zinc-800 rounded-xl aspect-square"
+                className="flex flex-col items-center justify-center gap-2 p-4 bg-zinc-100 dark:bg-zinc-800 rounded-xl aspect-square"
               >
                 <img src={tool.imageUrl} alt="" className="w-[50%] mx-auto" />
 
-                <h2 className="font-semibold  text-zinc-700 dark:text-zinc-200">
+                <h2 className="font-semibold text-zinc-700 dark:text-zinc-200">
                   {tool.name}
                 </h2>
               </div>
@@ -61,11 +59,11 @@ export default function Stack() {
             .map((tool) => (
               <div
                 key={tool.name}
-                className="flex flex-col items-center justify-center gap-2 p-4  bg-zinc-100 dark:bg-zinc-800 rounded-xl aspect-square"
+                className="flex flex-col items-center justify-center gap-2 p-4 bg-zinc-100 dark:bg-zinc-800 rounded-xl aspect-square"
               >
                 <img src={tool.imageUrl} alt="" className="w-[50%] mx-auto" />
 
-                <h2 className="font-semibold  text-zinc-700 dark:text-zinc-200">
+                <h2 className="font-semibold text-zinc-700 dark:text-zinc-200">
                   {tool.name}
                 </h2>
               </div>

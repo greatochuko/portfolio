@@ -1,11 +1,9 @@
 import { useParams } from "react-router-dom";
 import projects from "../data/projects.json";
 import Project from "../components/Project";
-import useScrollRefresh from "../hooks/useScrollRefresh";
 
 export default function ProjectDetail() {
   const { projectName } = useParams();
-  useScrollRefresh();
 
   const project = projects.find((project) => project.url === projectName);
 

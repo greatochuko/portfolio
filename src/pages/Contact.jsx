@@ -1,11 +1,9 @@
 import emailjs from "@emailjs/browser";
 import { useRef, useState } from "react";
-import useScrollRefresh from "../hooks/useScrollRefresh";
 
 export default function Contact() {
   const form = useRef();
   const [loading, setLoading] = useState(false);
-  useScrollRefresh();
 
   async function sendEmail(e) {
     e.preventDefault();

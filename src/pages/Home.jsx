@@ -3,7 +3,6 @@ import resume from "../assets/resume.pdf";
 import { Link } from "react-router-dom";
 import Project from "../components/Project";
 import projects from "../data/projects.json";
-import useScrollRefresh from "../hooks/useScrollRefresh";
 
 export default function Home() {
   const now = new Date().toLocaleTimeString();
@@ -11,7 +10,6 @@ export default function Home() {
   const dateArr = now.split(":");
   dateArr.splice(dateArr.length - 1, 1);
   const date = `${dateArr.join(":")} ${hourTime}`;
-  useScrollRefresh();
 
   return (
     <div className="flex flex-col items-center max-w-2xl p-4 mx-auto h-fit ">
