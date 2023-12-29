@@ -71,11 +71,12 @@ export default function Home() {
         </Link>
       </div>
       <a
-        download
+        target="_blank"
+        rel="noreferrer"
         href={resume}
         className="px-4 py-2 mt-4 border rounded-lg border-zinc-200 bg-zinc-100 dark:text-zinc-200 dark:bg-zinc-800 dark:border-zinc-600"
       >
-        Download my Resume <i className="fa-solid fa-file-arrow-down"></i>
+        View my Resume <i className="fa-solid fa-file-arrow-down"></i>
       </a>
       <section className="flex flex-col gap-2 text-zinc-700 text-[15px] font-normal my-2 dark:text-zinc-200">
         <h3 className="mt-5 mb-2 font-bold text-center">About</h3>
