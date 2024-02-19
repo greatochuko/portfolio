@@ -1,5 +1,45 @@
 [
   {
+    "url": "shopparel",
+    "name": "Shopparel - Your Ultimate Fashion Destination",
+    "imgSrc": "/shopparel.png",
+    "description": "Welcome to Shopparel, where fashion meets technology! Immerse yourself in the world of style and trends, as we bring you a seamless e-commerce experience tailored for the modern fashionista. Explore the latest collections, discover unique pieces, and redefine your wardrobe with Shopparel's curated selection of clothing and accessories.",
+    "about": "Shopparel is not just an online store; it's a fashion haven designed to elevate your shopping experience. Navigate through a user-friendly platform that combines cutting-edge technology with the latest trends. Whether you're a fashion enthusiast or seeking the perfect look for a special occasion, Shopparel invites you to indulge in a world of style and convenience.",
+    "features": [
+      {
+        "title": "Effortless Browsing",
+        "description": "Discover the latest fashion trends with ease. Shopparel offers an intuitive browsing experience, allowing users to effortlessly explore a wide range of clothing and accessories. From casual wear to high-end fashion, find your perfect style in just a few clicks."
+      },
+      {
+        "title": "Streamlined Control",
+        "description": "Manage your Shopparel experience seamlessly with our enhanced Admin Panel functionality. Effortlessly navigate through user data, monitor sales, and update product listings. From user management to inventory control, gain total control with just a few clicks. Administer your fashion empire effortlessly with Shopparel's intuitive Admin Panel!"
+      },
+      {
+        "title": "Secure Checkout",
+        "description": "Shop with confidence using our secure checkout process. Your privacy and security are our top priorities. Shopparel ensures a seamless and protected transaction experience, giving you peace of mind as you complete your purchase."
+      },
+      {
+        "title": "Personalized Recommendations",
+        "description": "Enhance your shopping journey with personalized recommendations. Shopparel's smart algorithms analyze your preferences and purchase history to suggest items that match your unique style. Experience a tailored shopping experience that keeps you ahead of the fashion curve."
+      },
+      {
+        "title": "User Authentication",
+        "description": "Protecting your account and ensuring a personalized experience, Shopparel employs robust User Authentication. Create an account to enjoy features like order tracking, personalized recommendations, and a saved wishlist, all within a secure and user-friendly environment."
+      }
+    ],
+    "contribution": "As the sole developer behind Shopparel, I've poured my passion for fashion and technology into every line of code. From crafting an engaging user interface to implementing secure payment gateways, I've meticulously designed Shopparel to be a seamless and enjoyable platform. As both the frontend and backend developer, I've woven together the latest technologies to create a unique shopping experience. Shopparel is more than an e-commerce site; it's a dedication to merging fashion and technology for the ultimate shopping adventure.",
+    "stack": [
+      { "name": "React", "icon": "fa-brands fa-react" },
+      { "name": "Node", "icon": "fa-brands fa-node" },
+      { "name": "Express", "icon": "fa-brands fa-node-js" },
+      { "name": "MongoDB", "icon": "fa-solid fa-database" },
+      { "name": "JWT", "icon": "fa-solid fa-key" },
+      { "name": "Tailwind CSS", "icon": "fa-solid fa-file-code" }
+    ],
+    "githubLink": "https://github.com/greatochuko/shopparel",
+    "websiteLink": "https://shopparel.vercel.app/"
+  },
+  {
     "url": "pikxr",
     "name": "Pikxr - Social Media Website",
     "imgSrc": "/pikxr.png",
@@ -74,41 +114,5 @@
     ],
     "githubLink": "https://github.com/greatochuko/web-dev-stories",
     "websiteLink": "https://web-dev-stories.vercel.app"
-  },
-  {
-    "url": "shopparel",
-    "name": "Shopparel - Your Ultimate Fashion Destination",
-    "imgSrc": "/shopparel.png",
-    "description": "Welcome to Shopparel, where fashion meets technology! Immerse yourself in the world of style and trends, as we bring you a seamless e-commerce experience tailored for the modern fashionista. Explore the latest collections, discover unique pieces, and redefine your wardrobe with Shopparel's curated selection of clothing and accessories.",
-    "about": "Shopparel is not just an online store; it's a fashion haven designed to elevate your shopping experience. Navigate through a user-friendly platform that combines cutting-edge technology with the latest trends. Whether you're a fashion enthusiast or seeking the perfect look for a special occasion, Shopparel invites you to indulge in a world of style and convenience.",
-    "features": [
-      {
-        "title": "Effortless Browsing",
-        "description": "Discover the latest fashion trends with ease. Shopparel offers an intuitive browsing experience, allowing users to effortlessly explore a wide range of clothing and accessories. From casual wear to high-end fashion, find your perfect style in just a few clicks."
-      },
-      {
-        "title": "Secure Checkout",
-        "description": "Shop with confidence using our secure checkout process. Your privacy and security are our top priorities. Shopparel ensures a seamless and protected transaction experience, giving you peace of mind as you complete your purchase."
-      },
-      {
-        "title": "Personalized Recommendations",
-        "description": "Enhance your shopping journey with personalized recommendations. Shopparel's smart algorithms analyze your preferences and purchase history to suggest items that match your unique style. Experience a tailored shopping experience that keeps you ahead of the fashion curve."
-      },
-      {
-        "title": "User Authentication",
-        "description": "Protecting your account and ensuring a personalized experience, Shopparel employs robust User Authentication. Create an account to enjoy features like order tracking, personalized recommendations, and a saved wishlist, all within a secure and user-friendly environment."
-      }
-    ],
-    "contribution": "As the sole developer behind Shopparel, I've poured my passion for fashion and technology into every line of code. From crafting an engaging user interface to implementing secure payment gateways, I've meticulously designed Shopparel to be a seamless and enjoyable platform. As both the frontend and backend developer, I've woven together the latest technologies to create a unique shopping experience. Shopparel is more than an e-commerce site; it's a dedication to merging fashion and technology for the ultimate shopping adventure.",
-    "stack": [
-      { "name": "React", "icon": "fa-brands fa-react" },
-      { "name": "Node", "icon": "fa-brands fa-node" },
-      { "name": "Express", "icon": "fa-brands fa-node-js" },
-      { "name": "MongoDB", "icon": "fa-solid fa-database" },
-      { "name": "JWT", "icon": "fa-solid fa-key" },
-      { "name": "Tailwind CSS", "icon": "fa-solid fa-file-code" }
-    ],
-    "githubLink": "https://github.com/greatochuko/shopparel",
-    "websiteLink": "https://shopparel.vercel.app/"
   }
 ]
