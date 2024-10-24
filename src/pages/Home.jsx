@@ -31,7 +31,7 @@ export default function Home() {
       </p>
       <div className="flex gap-4 my-4 text-xl text-zinc-500 dark:text-zinc-300">
         <a
-          href="https://twitter.com/greatochuko123"
+          href="https://twitter.com/officialochuko"
           target="_blank"
           rel="noopener noreferrer"
           className="p-2 duration-150 hover:text-zinc-800 dark:hover:text-white"

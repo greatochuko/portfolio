@@ -47,7 +47,7 @@ export default function Contact() {
         </a>
         <a
           className="p-4 transition-all border rounded-lg border-zinc-200 dark:border-zinc-700 dark:bg-zinc-800 dark:text-zinc-200 dark:hover:bg-zinc-700 dark:hover:border-zinc-600 bg-zinc-100 hover:bg-zinc-200 hover:border-zinc-200"
-          href="https://twitter.com/greatochuko123"
+          href="https://twitter.com/officialochuko"
           target="_blank"
           rel="noopener noreferrer"
         >
