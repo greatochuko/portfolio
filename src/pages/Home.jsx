@@ -64,7 +64,7 @@ export default function Home() {
         </Link>
         or
         <Link
-          to={"mailto:greatochuko123@gmail.com"}
+          to={"mailto:officialgreatochuko@gmail.com"}
           className="px-4 py-2 border rounded-lg border-zinc-200 md:px-10 bg-zinc-100 dark:bg-zinc-800 dark:border-zinc-600"
         >
           Email me <i className="fa-regular fa-envelope"></i>
