@@ -11,6 +11,10 @@ export default {
       colors: {
         background: "#0a0a0a",
         foreground: "#ededed",
+        muted: "#1a1a1a",
+        "accent-gray": "#999",
+        "accent-green-100": "#4de6a6",
+        "accent-green-200": "#062d1d",
       },
     },
   },

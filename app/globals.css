@@ -3,9 +3,17 @@
 @tailwind utilities;
 
 @layer utilities {
-  .flex-center{
+  .flex-center {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+    scrollbar-width: none; /* Firefox */
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
   }
 }

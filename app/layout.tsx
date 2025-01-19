@@ -20,9 +20,9 @@ export default function RootLayout({
       <body
         className={`${inter.className} antialiased bg-background text-foreground`}
       >
-        <main className="w-[90%] mx-auto max-w-7xl flex gap-8">
+        <main className="flex">
           <Sidebar />
-          {children}
+          <div className="p-12 max-w-7xl mx-auto flex-1">{children}</div>
         </main>
       </body>
     </html>
