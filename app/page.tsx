@@ -1,4 +1,6 @@
 import AboutSection from "@/components/AboutSection";
+import ContactSection from "@/components/ContactSection";
+import Footer from "@/components/Footer";
 import RecentProjectSection from "@/components/RecentProjectSection";
 import StackSection from "@/components/StackSection";
 
@@ -8,6 +10,8 @@ export default function Home() {
       <AboutSection />
       <RecentProjectSection />
       <StackSection />
+      <ContactSection />
+      <Footer />
     </div>
   );
 }
