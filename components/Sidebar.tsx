@@ -12,7 +12,7 @@ import { IoMdMail } from "react-icons/io";
 import { FaFileDownload, FaGithub, FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
-export const navLinks = [
+const navLinks = [
   {
     name: "Home",
     href: "/",
@@ -45,7 +45,7 @@ export const navLinks = [
   },
 ];
 
-export const socialLinks = [
+const socialLinks = [
   {
     href: "https://linkedin.com/in/greatochuko",
     icon: FaLinkedin,

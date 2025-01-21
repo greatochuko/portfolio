@@ -41,9 +41,7 @@ export default function RecentProjectSection() {
               />
             </div>
             <div className="flex flex-col">
-              <h3 className="text-lg font-medium uppercase sm:text-xl">
-                {project.name}
-              </h3>
+              <h3 className="text-lg font-medium uppercase">{project.name}</h3>
               <p className="text-sm text-accent-green-100">
                 {project.subtitle}
               </p>

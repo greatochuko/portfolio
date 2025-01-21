@@ -5,7 +5,69 @@ import React, { useEffect, useState } from "react";
 import logo from "@/public/logo.png";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { navLinks, socialLinks } from "./Sidebar";
+import { GoHomeFill } from "react-icons/go";
+import { RiProjectorFill } from "react-icons/ri";
+import { PiUserCircleFill } from "react-icons/pi";
+import { HiSquare3Stack3D } from "react-icons/hi2";
+import { IoMdMail } from "react-icons/io";
+import { FaFileDownload, FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+
+const navLinks = [
+  {
+    name: "Home",
+    href: "/",
+    icon: GoHomeFill,
+  },
+  {
+    name: "About",
+    href: "/about",
+    icon: PiUserCircleFill,
+  },
+  {
+    name: "Projects",
+    href: "/projects",
+    icon: RiProjectorFill,
+  },
+  {
+    name: "Stack",
+    href: "/stack",
+    icon: HiSquare3Stack3D,
+  },
+  {
+    name: "Contact",
+    href: "/contact",
+    icon: IoMdMail,
+  },
+  {
+    name: "Resume",
+    href: "/my-resume",
+    icon: FaFileDownload,
+  },
+];
+
+const socialLinks = [
+  {
+    href: "https://linkedin.com/in/greatochuko",
+    icon: FaLinkedin,
+    name: "LinkedIn",
+  },
+  {
+    href: "https://github.com/greatochuko",
+    icon: FaGithub,
+    name: "Github",
+  },
+  {
+    href: "https://x.com/greatochuko14",
+    icon: FaXTwitter,
+    name: "Twitter",
+  },
+  {
+    href: "mailto:greatochuko123@gmail.com",
+    icon: IoMdMail,
+    name: "Mail",
+  },
+];
 
 export default function Header() {
   const pathname = usePathname();
@@ -23,6 +85,20 @@ export default function Header() {
       document.body.style.overflow = "auto";
     };
   }, [dropdown]);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 820) return;
+
+      document.body.style.overflow = "auto";
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   return (
     <>
