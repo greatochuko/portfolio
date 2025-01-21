@@ -1,0 +1,61 @@
+[
+  {
+    "title": "Shopparel",
+    "thumbnail": "/shopparel.png",
+    "thumbnailPlaceholder": "/shopparel-placeholder.jpg",
+    "images": ["/shopparel.png"],
+    "slug": "shopparel",
+    "liveUrl": "https://shopparel.vercel.app"
+  },
+  {
+    "title": "Bloggerzine",
+    "thumbnail": "/bloggerzine.jpg",
+    "thumbnailPlaceholder": "/bloggerzine-placeholder.jpg",
+    "images": [
+      "/bloggerzine.jpg",
+      "/bloggerzine-2.png",
+      "/bloggerzine-3.png",
+      "/bloggerzine-4.png",
+      "/bloggerzine-5.png",
+      "/bloggerzine-6.png",
+      "/bloggerzine-7.png",
+      "/bloggerzine-8.png",
+      "/bloggerzine-9.png",
+      "/bloggerzine-10.png",
+      "/bloggerzine-11.png",
+      "/bloggerzine-12.png",
+      "/bloggerzine-13.png",
+      "/bloggerzine-14.png",
+      "/bloggerzine-15.png",
+      "/bloggerzine-16.png",
+      "/bloggerzine-16.png",
+      "/bloggerzine-17.png",
+      "/bloggerzine-18.png",
+      "/bloggerzine-19.png",
+      "/bloggerzine-20.png",
+      "/bloggerzine-21.png",
+      "/bloggerzine-22.png",
+      "/bloggerzine-23.png",
+      "/bloggerzine-24.png",
+      "/bloggerzine-25.png"
+    ],
+    "slug": "bloggerzine",
+    "liveUrl": "https://bloggerzine.vercel.app"
+  },
+  {
+    "title": "Estate Haven",
+    "thumbnail": "/estate-haven.png",
+    "thumbnailPlaceholder": "/estate-haven-placeholder.jpg",
+    "images": ["/estate-haven.png"],
+    "slug": "estate-haven",
+    "liveUrl": "https://estatehaven.vercel.app"
+  },
+  {
+    "title": "Pikxr",
+    "thumbnail": "/pikxr.png",
+    "thumbnailPlaceholder": "/pikxr-placeholder.jpg",
+    "images": ["/pikxr.png"],
+    "slug": "pikxr",
+    "liveUrl": "https://pikxr.onrender.com"
+  }
+]

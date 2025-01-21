@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import logo from "@/public/logo.png";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -12,9 +12,21 @@ export default function Header() {
 
   const [dropdown, setDropdown] = useState(false);
 
+  useEffect(() => {
+    if (dropdown) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [dropdown]);
+
   return (
     <>
-      <div className="z-20 flex items-center gap-4 bg-background p-6 min-[820px]:hidden">
+      <div className="sticky top-0 z-20 flex items-center gap-4 bg-background p-6 min-[820px]:hidden">
         <Image
           src={logo}
           alt="Logo"
@@ -39,7 +51,7 @@ export default function Header() {
       </div>
 
       <div
-        className={`fixed left-0 top-0 flex h-full w-full flex-col bg-background p-6 pt-24 text-sm duration-300 min-[820px]:hidden ${dropdown ? "visible scale-100 opacity-100" : "invisible scale-95 opacity-0"}`}
+        className={`fixed left-0 top-0 z-10 flex h-full w-full flex-col bg-background p-6 pt-24 text-sm duration-300 min-[820px]:hidden ${dropdown ? "visible scale-100 opacity-100" : "invisible scale-95 opacity-0"}`}
       >
         <nav className="flex flex-col gap-2">
           {navLinks.map((navLink) => (

@@ -1,8 +1,6 @@
 import React from "react";
-
-import Link from "next/link";
-import { FaArrowRight } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
+import ViewAllButton from "./ViewAllButton";
 
 export default function AboutSection() {
   return (
@@ -20,13 +18,8 @@ export default function AboutSection() {
           <FaLocationDot className="h-4 w-4 text-accent-green-100" />
           Benin City, Nigeria
         </p>
-        <hr className="flex-1 border-dashed border-accent-gray" />
-        <Link
-          href={"/about"}
-          className="flex-center mt-8 w-full gap-2 rounded-xl border border-accent-gray px-6 py-3 duration-300 hover:border-muted hover:bg-muted hover:text-accent-green-100 sm:mt-0 sm:w-fit"
-        >
-          More about me <FaArrowRight className="h-4 w-4" />
-        </Link>
+        <hr className="flex-1 border-dashed border-[#666]" />
+        <ViewAllButton href="/about">More About Me</ViewAllButton>
       </div>
     </section>
   );
