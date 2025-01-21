@@ -49,18 +49,22 @@ const socialLinks = [
   {
     href: "https://linkedin.com/in/greatochuko",
     icon: FaLinkedin,
+    name: "LinkedIn",
   },
   {
     href: "https://github.com/greatochuko",
     icon: FaGithub,
+    name: "Github",
   },
   {
     href: "https://x.com/greatochuko14",
     icon: FaXTwitter,
+    name: "Twitter",
   },
   {
     href: "mailto:greatochuko123@gmail.com",
     icon: IoMdMail,
+    name: "Mail",
   },
 ];
 
@@ -68,31 +72,31 @@ export default function Sidebar() {
   const pathname = usePathname();
 
   return (
-    <div className="p-6 hidden min-[820px]:flex lg:p-10 flex-col sticky no-scrollbar top-0 gap-8 border-r border-neutral-700 h-dvh overflow-y-auto justify-between">
-      <div className="flex flex-col gap-4">
+    <div className="no-scrollbar sticky top-0 hidden h-dvh flex-col gap-12 overflow-y-auto border-r border-neutral-700 p-6 min-[820px]:flex lg:p-12">
+      <div className="flex flex-col gap-3">
         <Image
           src={logo}
           alt="logo"
-          className="rounded-xl border border-neutral-700 lg:w-44 lg:h-44 w-[120px] h-[120px]"
+          className="h-32 w-32 rounded-xl border border-neutral-700 lg:h-48 lg:w-48"
         />
-        <p className="flex-center py-1 px-4 gap-2 text-sm bg-accent-green-200 rounded-full text-accent-green-100">
-          <span className="w-2 h-2 animate-pulse rounded-full bg-accent-green-100"></span>{" "}
+        <p className="flex-center gap-2 rounded-full bg-accent-green-200 px-4 py-1 text-sm text-accent-green-100">
+          <span className="h-2 w-2 animate-pulse rounded-full bg-accent-green-100"></span>{" "}
           Available <span className="hidden lg:inline">for work</span>
         </p>
       </div>
-      <nav className="flex flex-col gap-2 ">
+      <nav className="flex flex-col gap-2">
         {navLinks.map((navLink) => (
           <Link
             key={navLink.name}
             href={navLink.href}
-            className={`flex items-center group gap-4 text-sm p-3 duration-300 px-4 rounded-lg  ${
+            className={`group flex items-center gap-4 rounded-lg p-3 px-4 text-sm duration-300 ${
               pathname.startsWith(navLink.href)
-                ? "bg-muted font-medium"
-                : "hover:text-accent-green-100"
+                ? "bg-muted font-medium text-foreground"
+                : "text-accent-gray hover:text-accent-green-100"
             }`}
           >
             <navLink.icon
-              className={`w-4 h-4 duration-300  ${
+              className={`h-4 w-4 duration-300 ${
                 pathname.startsWith(navLink.href)
                   ? ""
                   : "group-hover:scale-125 group-hover:text-accent-green-100"
@@ -102,14 +106,15 @@ export default function Sidebar() {
           </Link>
         ))}
       </nav>
-      <div className="grid items-center  gap-4 grid-cols-2 lg:grid-cols-4">
+      <div className="mt-auto grid grid-cols-1 items-center lg:grid-cols-4">
         {socialLinks.map((socialLink, i) => (
           <Link
             key={i}
             href={socialLink.href}
-            className="p-2 group hover:scale-125 duration-300 flex-center"
+            className="group flex items-center gap-2 p-4 duration-300 hover:scale-125 lg:justify-center"
           >
-            <socialLink.icon className="w-4 h-4 group-hover:text-accent-green-100 duration-300" />
+            <socialLink.icon className="h-4 w-4 text-accent-gray duration-300 group-hover:text-accent-green-100" />
+            <span className="lg:hidden">{socialLink.name}</span>
           </Link>
         ))}
       </div>

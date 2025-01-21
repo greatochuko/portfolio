@@ -10,7 +10,7 @@ export default {
     extend: {
       colors: {
         background: "#0a0a0a",
-        foreground: "#ededed",
+        foreground: "#e6e6e6",
         muted: "#1a1a1a",
         "accent-gray": "#999",
         "accent-green-100": "#4de6a6",
