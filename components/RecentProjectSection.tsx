@@ -24,7 +24,7 @@ const recentProjects = [
 
 export default function RecentProjectSection() {
   return (
-    <div className="flex flex-col gap-8">
+    <section className="flex flex-col gap-8">
       <h2 className="text-2xl font-medium">Recent Projects</h2>
       <div className="flex flex-col gap-6 gap-y-8 md:flex-row lg:gap-8">
         {recentProjects.slice(0, 2).map((project) => (
@@ -55,6 +55,6 @@ export default function RecentProjectSection() {
           View All Projects
         </ViewAllButton>
       </div>
-    </div>
+    </section>
   );
 }

@@ -14,11 +14,6 @@ import { FaXTwitter } from "react-icons/fa6";
 
 const navLinks = [
   {
-    name: "Home",
-    href: "/",
-    icon: GoHomeFill,
-  },
-  {
     name: "About",
     href: "/about",
     icon: PiUserCircleFill,
@@ -85,6 +80,23 @@ export default function Sidebar() {
         </p>
       </div>
       <nav className="flex flex-col gap-2">
+        <Link
+          href={"/"}
+          className={`group flex items-center gap-4 rounded-lg p-3 px-4 text-sm duration-300 ${
+            pathname === "/"
+              ? "bg-muted font-medium text-foreground"
+              : "text-accent-gray hover:text-accent-green-100"
+          }`}
+        >
+          <GoHomeFill
+            className={`h-4 w-4 duration-300 ${
+              pathname === "/"
+                ? ""
+                : "group-hover:scale-125 group-hover:text-accent-green-100"
+            }`}
+          />
+          <span className="hidde lg:inline">Home</span>
+        </Link>
         {navLinks.map((navLink) => (
           <Link
             key={navLink.name}

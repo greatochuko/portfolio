@@ -3,6 +3,7 @@ import { Funnel_Display } from "next/font/google";
 import "./globals.css";
 import Sidebar from "@/components/Sidebar";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 const funnelDisplay = Funnel_Display({ subsets: ["latin"], weight: "400" });
 
@@ -25,7 +26,10 @@ export default function RootLayout({
         <main className="flex flex-col min-[820px]:flex-row">
           <Header />
           <Sidebar />
-          <div className="mx-auto max-w-7xl flex-1 p-6 sm:p-12">{children}</div>
+          <div className="mx-auto max-w-7xl flex-1 p-6 sm:p-12">
+            {children}
+            <Footer />
+          </div>
         </main>
       </body>
     </html>

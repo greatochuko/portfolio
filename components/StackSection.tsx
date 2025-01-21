@@ -31,7 +31,7 @@ const techStack = [
 
 export default function StackSection() {
   return (
-    <div className="flex flex-col gap-8">
+    <section className="flex flex-col gap-8">
       <h2 className="text-2xl font-medium">Stack</h2>
       <div className="grid gap-6 sm:grid-cols-2">
         {techStack.map((stack) => (
@@ -57,6 +57,6 @@ export default function StackSection() {
           View All Stack
         </ViewAllButton>
       </div>
-    </div>
+    </section>
   );
 }
