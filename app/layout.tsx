@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Funnel_Display } from "next/font/google";
 import "./globals.css";
 import Sidebar from "@/components/Sidebar";
 
-const inter = Inter({ subsets: ["latin"] });
+const funnelDisplay = Funnel_Display({ subsets: ["latin"], weight: "400" });
 
 export const metadata: Metadata = {
   title: "Great Ogheneochuko - Full Stack Developer",
@@ -19,11 +19,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} bg-background text-foreground antialiased`}
+        className={`${funnelDisplay.className} bg-background text-foreground antialiased`}
       >
         <main className="flex">
           <Sidebar />
-          <div className="mx-auto max-w-7xl flex-1 p-12">{children}</div>
+          <div className="mx-auto max-w-7xl flex-1 p-6 sm:p-12">{children}</div>
         </main>
       </body>
     </html>
