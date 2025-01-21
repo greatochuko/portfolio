@@ -12,7 +12,7 @@ import { IoMdMail } from "react-icons/io";
 import { FaFileDownload, FaGithub, FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
-const navLinks = [
+export const navLinks = [
   {
     name: "Home",
     href: "/",
@@ -45,7 +45,7 @@ const navLinks = [
   },
 ];
 
-const socialLinks = [
+export const socialLinks = [
   {
     href: "https://linkedin.com/in/greatochuko",
     icon: FaLinkedin,
@@ -72,12 +72,12 @@ export default function Sidebar() {
   const pathname = usePathname();
 
   return (
-    <div className="no-scrollbar sticky top-0 hidden h-dvh flex-col gap-12 overflow-y-auto border-r border-neutral-700 p-6 min-[820px]:flex lg:p-12">
+    <div className="no-scrollbar sticky top-0 hidden h-dvh flex-col gap-12 overflow-y-auto border-r border-neutral-700 p-6 min-[820px]:flex lg:px-12">
       <div className="flex flex-col gap-3">
         <Image
           src={logo}
           alt="logo"
-          className="h-32 w-32 rounded-xl border border-neutral-700 lg:h-48 lg:w-48"
+          className="h-32 w-32 rounded-xl border border-neutral-700 object-cover lg:h-48 lg:w-48"
         />
         <p className="flex-center gap-2 rounded-full bg-accent-green-200 px-4 py-1 text-sm text-accent-green-100">
           <span className="h-2 w-2 animate-pulse rounded-full bg-accent-green-100"></span>{" "}
@@ -111,9 +111,9 @@ export default function Sidebar() {
           <Link
             key={i}
             href={socialLink.href}
-            className="group flex items-center gap-2 p-4 duration-300 hover:scale-125 lg:justify-center"
+            className="group flex items-center gap-2 p-3 text-sm text-accent-gray duration-300 lg:justify-center"
           >
-            <socialLink.icon className="h-4 w-4 text-accent-gray duration-300 group-hover:text-accent-green-100" />
+            <socialLink.icon className="h-4 w-4 text-accent-gray duration-300 group-hover:scale-125 group-hover:text-accent-green-100" />
             <span className="lg:hidden">{socialLink.name}</span>
           </Link>
         ))}

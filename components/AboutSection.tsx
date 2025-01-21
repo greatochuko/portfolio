@@ -13,9 +13,7 @@ export default function AboutSection() {
       </h1>
       <p className="max-w-2xl text-accent-gray">
         A dedicated full-stack web developer with a passion for building
-        scalable, user-friendly applications. Skilled in crafting seamless
-        front-end interfaces and robust back-end solutions to bring ideas to
-        life.
+        scalable, user-friendly applications.
       </p>
       <div className="flex flex-wrap items-center gap-4 text-sm text-accent-gray">
         <p className="flex items-center gap-2">

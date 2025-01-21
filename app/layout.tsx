@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Funnel_Display } from "next/font/google";
 import "./globals.css";
 import Sidebar from "@/components/Sidebar";
+import Header from "@/components/Header";
 
 const funnelDisplay = Funnel_Display({ subsets: ["latin"], weight: "400" });
 
@@ -21,7 +22,8 @@ export default function RootLayout({
       <body
         className={`${funnelDisplay.className} bg-background text-foreground antialiased`}
       >
-        <main className="flex">
+        <main className="flex flex-col min-[820px]:flex-row">
+          <Header />
           <Sidebar />
           <div className="mx-auto max-w-7xl flex-1 p-6 sm:p-12">{children}</div>
         </main>
