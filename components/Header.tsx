@@ -20,8 +20,8 @@ const navLinks = [
     icon: PiUserCircleFill,
   },
   {
-    name: "Projects",
-    href: "/projects",
+    name: "Works",
+    href: "/works",
     icon: RiProjectorFill,
   },
   {

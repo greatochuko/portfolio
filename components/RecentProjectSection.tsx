@@ -14,7 +14,7 @@ export default function RecentProjectSection() {
       </div>
       <div className="flex flex-wrap items-center gap-4 text-sm text-accent-gray">
         <hr className="hidden flex-1 border-dashed border-[#666] sm:block" />
-        <ViewAllButton href="/projects" className="mt-0">
+        <ViewAllButton href="/works" className="mt-0">
           View All Projects
         </ViewAllButton>
       </div>

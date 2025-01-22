@@ -2,11 +2,12 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-type ProjectType = {
+export type ProjectType = {
   title: string;
   thumbnail: string;
   thumbnailPlaceholder: string;
   subtitle: string;
+  type: "freelance" | "personal";
   images: string[];
   slug: string;
   liveUrl: string;
@@ -15,7 +16,7 @@ type ProjectType = {
 export default function Project({ project }: { project: ProjectType }) {
   return (
     <Link
-      href={`/projects/${project.slug}`}
+      href={`/works/${project.slug}`}
       className="group flex flex-1 flex-col gap-3"
     >
       <div className="relative aspect-[1.6] overflow-hidden rounded-md bg-muted sm:rounded-lg">
