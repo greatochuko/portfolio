@@ -1,8 +1,9 @@
 [
   {
     "title": "Shopparel",
-    "thumbnail": "/shopparel.png",
+    "thumbnail": "/shopparel.jpg",
     "thumbnailPlaceholder": "/shopparel-placeholder.jpg",
+    "subtitle": "Fashion e-commerce website",
     "images": ["/shopparel.png"],
     "slug": "shopparel",
     "liveUrl": "https://shopparel.vercel.app"
@@ -11,6 +12,7 @@
     "title": "Bloggerzine",
     "thumbnail": "/bloggerzine.jpg",
     "thumbnailPlaceholder": "/bloggerzine-placeholder.jpg",
+    "subtitle": "Blog website",
     "images": [
       "/bloggerzine.jpg",
       "/bloggerzine-2.png",
@@ -46,14 +48,16 @@
     "title": "Estate Haven",
     "thumbnail": "/estate-haven.png",
     "thumbnailPlaceholder": "/estate-haven-placeholder.jpg",
+    "subtitle": "Real estate website",
     "images": ["/estate-haven.png"],
     "slug": "estate-haven",
     "liveUrl": "https://estatehaven.vercel.app"
   },
   {
     "title": "Pikxr",
-    "thumbnail": "/pikxr.png",
+    "thumbnail": "/pikxr.jpg",
     "thumbnailPlaceholder": "/pikxr-placeholder.jpg",
+    "subtitle": "Social media website",
     "images": ["/pikxr.png"],
     "slug": "pikxr",
     "liveUrl": "https://pikxr.onrender.com"

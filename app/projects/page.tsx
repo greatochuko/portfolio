@@ -1,15 +1,18 @@
 import Image from "next/image";
-import React from "react";
 import Link from "next/link";
-import ViewAllButton from "./ViewAllButton";
+import React from "react";
 import projects from "@/data/projects.json";
 
-export default function RecentProjectSection() {
+export default function page() {
   return (
-    <section className="flex flex-col gap-8">
-      <h2 className="text-2xl font-medium">Recent Projects</h2>
+    <div className="flex flex-col gap-12">
+      <section className="flex flex-col gap-12">
+        <h1 className="text-4xl font-medium sm:text-[42px] lg:text-5xl">
+          My Remarkable Projects
+        </h1>
+      </section>
       <div className="grid gap-6 gap-y-8 md:grid-cols-2 lg:gap-8">
-        {projects.slice(0, 2).map((project) => (
+        {projects.map((project) => (
           <Link
             href={`/projects/${project.slug}`}
             key={project.slug}
@@ -33,12 +36,6 @@ export default function RecentProjectSection() {
           </Link>
         ))}
       </div>
-      <div className="flex flex-wrap items-center gap-4 text-sm text-accent-gray">
-        <hr className="hidden flex-1 border-dashed border-[#666] sm:block" />
-        <ViewAllButton href="/projects" className="mt-0">
-          View All Projects
-        </ViewAllButton>
-      </div>
-    </section>
+    </div>
   );
 }

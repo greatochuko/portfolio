@@ -34,7 +34,9 @@ export default function AboutPage() {
   return (
     <div className="flex flex-col gap-12">
       <section className="flex flex-col gap-12">
-        <h1 className="text-[2.625rem] font-medium">Get to know Me</h1>
+        <h1 className="text-4xl font-medium sm:text-[42px] lg:text-5xl">
+          Get to know Me
+        </h1>
         <p className="max-w-2xl text-accent-gray">
           Hello, I&apos;m Great Ogheneochuko, and I&apos;m more than just a web
           developer; I&apos;m a creator of digital experiences. My journey in
