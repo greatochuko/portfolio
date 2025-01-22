@@ -1,6 +1,13 @@
 import React from "react";
 import projectsData from "@/data/projects.json";
 import Project, { ProjectType } from "@/components/Project";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "My Works",
+  description:
+    "Explore a showcase of my best projects, from scalable full-stack applications to responsive web designs. Crafted with modern technologies like Next.js, React, and Node.js, these works reflect my expertise in building efficient, user-friendly, and performance-optimized solutions.",
+};
 
 export default function page() {
   const projects: ProjectType[] = projectsData.map((project) => ({

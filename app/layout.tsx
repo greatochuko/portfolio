@@ -8,7 +8,10 @@ import Footer from "@/components/Footer";
 const funnelDisplay = Funnel_Display({ subsets: ["latin"], weight: "400" });
 
 export const metadata: Metadata = {
-  title: "Great Ogheneochuko - Full Stack Developer",
+  title: {
+    absolute: "Great Ogheneochuko - Full Stack Developer",
+    template: "%s - Great Ogheneochuko",
+  },
   description:
     "Explore Great Ogheneochuko's portfolio showcasing innovative web development projects, including scalable full-stack applications and user-focused designs. Specializing in Next.js, React, Node.js, and TypeScript for dynamic, high-performing web solutions.",
 };

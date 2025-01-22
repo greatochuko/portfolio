@@ -1,4 +1,5 @@
 import ViewAllButton from "@/components/ViewAllButton";
+import { Metadata } from "next";
 import React from "react";
 import { FaLocationDot } from "react-icons/fa6";
 import { TbDeviceImacCode } from "react-icons/tb";
@@ -29,6 +30,12 @@ const educationList = [
     toDate: "Jan 2025",
   },
 ];
+
+export const metadata: Metadata = {
+  title: "About Me",
+  description:
+    "Learn more about me - a passionate web developer with expertise in creating dynamic full-stack applications and user-focused designs. With a strong foundation in Next.js, React, and Node.js, I thrive on delivering innovative and scalable solutions for the modern web.",
+};
 
 export default function AboutPage() {
   return (
