@@ -27,7 +27,7 @@ export default function RootLayout({
           <Header />
           <Sidebar />
           <div className="flex-1">
-            <div className="mx-auto w-[90%] max-w-5xl flex-1 py-12">
+            <div className="mx-auto w-[90%] max-w-6xl flex-1 py-12">
               {children}
               <Footer />
             </div>
