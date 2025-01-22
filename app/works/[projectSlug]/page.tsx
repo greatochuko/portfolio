@@ -3,6 +3,7 @@ import projects from "@/data/projects.json";
 import { notFound } from "next/navigation";
 import ViewAllButton from "@/components/ViewAllButton";
 import BackButton from "@/components/BackButton";
+import RecentProjectSection from "@/components/RecentProjectSection";
 import Image from "next/image";
 import Link from "next/link";
 import ImageGallery from "@/components/ImageGallery";
@@ -94,11 +95,12 @@ export default async function page({
           <ImageGallery images={project.images} />
         </section>
       </div>
-      <div className="flex flex-wrap items-center gap-4 text-sm text-accent-gray">
+      <div className="mb-12 flex flex-wrap items-center gap-4 text-sm text-accent-gray">
         <BackButton href="/works">Back to Works</BackButton>
         <hr className="flex-1 border-dashed border-[#666]" />
         <ViewAllButton href={project.liveUrl}>Live Site</ViewAllButton>
       </div>
+      <RecentProjectSection title="Other Projects" />
     </div>
   );
 }
