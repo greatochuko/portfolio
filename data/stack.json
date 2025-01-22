@@ -1,0 +1,72 @@
+[
+  {
+    "name": "JavaScript",
+    "subTitle": "Web Development Language",
+    "description": "JavaScript is my foundational tool for building interactive and dynamic web applications. Its versatility allows me to create client-side and server-side functionality, enabling seamless user experiences and real-time interactions across platforms.",
+    "logo": "/javascript-logo.svg",
+    "preview": false
+  },
+  {
+    "name": "TypeScript",
+    "subTitle": "Typed Javascript",
+    "description": "TypeScript is my go-to tool for writing maintainable and robust code. Its static typing helps catch errors early in development, improving code quality and enabling better collaboration across teams. I rely on its advanced type system to build scalable applications with confidence.",
+    "logo": "/typescript-logo.png",
+    "preview": true
+  },
+  {
+    "name": "React",
+    "subTitle": "JavaScript UI library",
+    "description": "React is my preferred library for creating dynamic and interactive user interfaces. Its component-based architecture allows me to break down complex UIs into manageable pieces, while its virtual DOM ensures fast rendering and a seamless user experience.",
+    "logo": "/react-logo.png",
+    "preview": true
+  },
+  {
+    "name": "Next JS",
+    "subTitle": "React Framework",
+    "description": "Next.js is my framework of choice for developing modern, server-rendered React applications. It provides powerful features like static site generation, server-side rendering, and API routes, allowing me to deliver highly optimized and performant web applications.",
+    "logo": "/nextjs-logo.svg",
+    "preview": false
+  },
+  {
+    "name": "NodeJS",
+    "subTitle": "JavaScript runtime",
+    "description": "Node.js is my trusted runtime for building efficient server-side applications. Its non-blocking, event-driven architecture allows me to handle multiple requests simultaneously, making it ideal for creating scalable back-end services and APIs.",
+    "logo": "/nodejs-icon.svg",
+    "preview": true
+  },
+  {
+    "name": "MongoDB",
+    "subTitle": "NoSQL Database",
+    "description": "MongoDB is my go-to database for managing and storing data in a scalable and flexible way. Its document-oriented structure allows me to handle complex data models effortlessly, making it ideal for modern applications requiring fast and efficient data retrieval.",
+    "logo": "/mongodb-logo.svg",
+    "preview": true
+  },
+  {
+    "name": "Tailwind CSS",
+    "subTitle": "Utility-first CSS framework",
+    "description": "Tailwind CSS is my go-to utility-first framework for designing responsive and modern web layouts. Its rich set of predefined classes enables rapid prototyping and customization without writing custom CSS, ensuring consistent design across the application.",
+    "logo": "/tailwind-logo.svg",
+    "preview": false
+  },
+  {
+    "name": "Supabase",
+    "subTitle": "Backend as a Service",
+    "description": "Supabase is my preferred backend platform for creating scalable, real-time applications. With built-in authentication, database management, and APIs, it streamlines the development process and lets me focus on building features.",
+    "logo": "/supabase-logo.svg",
+    "preview": false
+  },
+  {
+    "name": "HTML",
+    "subTitle": "Markup Language for the Web",
+    "description": "HTML is the backbone of my web development workflow. It provides the structure and semantics for all web pages, enabling me to craft accessible and well-organized content for users.",
+    "logo": "/html-logo.svg",
+    "preview": false
+  },
+  {
+    "name": "CSS",
+    "subTitle": "Styling for the Web",
+    "description": "CSS is my tool of choice for styling web applications. It enables me to create visually appealing, responsive designs, ensuring a seamless and engaging user experience across all devices.",
+    "logo": "/css-logo.svg",
+    "preview": false
+  }
+]
