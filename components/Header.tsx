@@ -101,7 +101,7 @@ export default function Header() {
         <Image
           src={logo}
           alt="Logo"
-          className="h-12 w-12 rounded-md border border-neutral-700"
+          className="h-12 w-12 rounded-md border border-neutral-700 bg-muted"
         />
         <p className="flex-center gap-2 rounded-full bg-accent-green-200 px-4 py-1 text-sm text-accent-green-100">
           <span className="h-2 w-2 animate-pulse rounded-full bg-accent-green-100"></span>{" "}

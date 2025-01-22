@@ -7,7 +7,7 @@ export type ProjectType = {
   thumbnail: string;
   thumbnailPlaceholder: string;
   subtitle: string;
-  type: "freelance" | "personal";
+  type: string;
   images: string[];
   slug: string;
   liveUrl: string;

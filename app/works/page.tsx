@@ -1,6 +1,6 @@
 import React from "react";
-import projectsData from "@/data/projects.json";
-import Project, { ProjectType } from "@/components/Project";
+import projects from "@/data/projects.json";
+import Project from "@/components/Project";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -10,11 +10,6 @@ export const metadata: Metadata = {
 };
 
 export default function page() {
-  const projects: ProjectType[] = projectsData.map((project) => ({
-    ...project,
-    type: project.type as "freelance" | "personal",
-  }));
-
   const freelanceProjects = projects.filter(
     (project) => project.type === "freelance",
   );

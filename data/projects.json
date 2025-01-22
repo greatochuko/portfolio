@@ -5,9 +5,26 @@
     "thumbnailPlaceholder": "/shopparel-placeholder.jpg",
     "subtitle": "Fashion e-commerce website",
     "type": "personal",
-    "images": ["/shopparel.png"],
+    "images": [
+      "/shopparel.jpg",
+      "/shopparel-1.png",
+      "/shopparel-2.png",
+      "/shopparel-3.png",
+      "/shopparel-4.png",
+      "/shopparel-5.png",
+      "/shopparel-6.png",
+      "/shopparel-7.png"
+    ],
     "slug": "shopparel",
-    "liveUrl": "https://shopparel.vercel.app"
+    "liveUrl": "https://shopparel.vercel.app",
+    "githubUrl": "https://github.com/greatochuko/shopparel",
+    "projectOverview": "Shopparel is a dynamic e-commerce platform designed for fashion enthusiasts to browse, purchase, and manage their favorite apparel seamlessly. It focuses on providing an engaging and responsive user experience, secure transactions, and efficient order management. The platform is tailored for scalability, making it suitable for businesses of any size.",
+    "techStack": {
+      "frontend": "React.js, TypeScript",
+      "backend": "Node.js, Express.js",
+      "database": "MongoDB",
+      "otherTools": "JWT for authentication, Tailwind CSS for styling"
+    }
   },
   {
     "title": "Bloggerzine",
@@ -17,7 +34,15 @@
     "type": "personal",
     "images": ["/bloggerzine.jpg"],
     "slug": "bloggerzine",
-    "liveUrl": "https://bloggerzine.vercel.app"
+    "liveUrl": "https://bloggerzine.vercel.app",
+    "githubUrl": "https://github.com/greatochuko/bloggerzine",
+    "projectOverview": "Bloggerzine is a scalable blog platform tailored for writers and readers across various niches. It allows writers to publish engaging articles effortlessly and readers to explore diverse content. With features like secure user authentication and real-time content updates, Bloggerzine is a go-to hub for content creators and consumers alike.",
+    "techStack": {
+      "frontend": "Next.js",
+      "backend": "Next.js server actions & API routes",
+      "database": "Supabase",
+      "otherTools": "TypeScript for scalability, Supabase Authentication for secure user access"
+    }
   },
   {
     "title": "Estate Haven",
@@ -27,7 +52,15 @@
     "type": "personal",
     "images": ["/estate-haven.png"],
     "slug": "estate-haven",
-    "liveUrl": "https://estatehaven.vercel.app"
+    "liveUrl": "https://estatehaven.vercel.app",
+    "githubUrl": "https://github.com/greatochuko/estate-haven",
+    "projectOverview": "Estate-Haven is a comprehensive real estate platform aimed at simplifying property listings and searches for users. The platform enables property owners to list their properties while potential buyers and renters can search and filter options based on location, price, and other criteria. Its user-friendly design ensures seamless navigation and accessibility across devices.",
+    "techStack": {
+      "frontend": "Next.js",
+      "backend": "Next.js server actions & API routes",
+      "database": "Supabase",
+      "otherTools": "TypeScript for scalability, JWT for authentication"
+    }
   },
   {
     "title": "Pikxr",
@@ -37,6 +70,14 @@
     "type": "personal",
     "images": ["/pikxr.png"],
     "slug": "pikxr",
-    "liveUrl": "https://pikxr.onrender.com"
+    "liveUrl": "https://pikxr.onrender.com",
+    "githubUrl": "https://github.com/greatochuko/pikxr-client",
+    "projectOverview": "Pikxr is an innovative photo-sharing platform designed for photographers and enthusiasts to share, explore, and appreciate high-quality images. It includes features like dynamic image galleries, social interactions, and a clean, responsive interface. Pikxr provides a creative space where users can showcase their work and connect with a like-minded community.",
+    "techStack": {
+      "frontend": "React.js, TypeScript",
+      "backend": "Node.js, Express.js",
+      "database": "MongoDB",
+      "otherTools": "JWT for authentication"
+    }
   }
 ]
