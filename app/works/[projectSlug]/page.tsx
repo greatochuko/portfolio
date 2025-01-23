@@ -132,7 +132,10 @@ export default async function ProjectDetailsPage({
         <hr className="flex-1 border-dashed border-[#666]" />
         <ViewAllButton href={project.liveUrl}>Live Site</ViewAllButton>
       </div>
-      <RecentProjectSection title="Other Projects" />
+      <RecentProjectSection
+        title="Other Projects"
+        projects={projects.filter((project) => project.slug !== projectSlug)}
+      />
 
       <LetsConnectSection />
     </div>

@@ -1,9 +1,12 @@
 import React from "react";
 import ViewAllButton from "./ViewAllButton";
-import projects from "@/data/projects.json";
+import projectsData from "@/data/projects.json";
 import Project from "./Project";
 
-export default function RecentProjectSection({ title = "Recent Projects" }) {
+export default function RecentProjectSection({
+  title = "Recent Projects",
+  projects = projectsData,
+}) {
   return (
     <section className="flex flex-col gap-8">
       <h2 className="text-2xl font-medium">{title}</h2>
