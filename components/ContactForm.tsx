@@ -13,7 +13,7 @@ export default function ContactForm() {
           type="text"
           name="name"
           id="name"
-          className="flex-1 rounded-lg border-none bg-muted p-4 text-sm outline-none placeholder:text-accent-gray focus-visible:outline-accent-green-100"
+          className="w-0 flex-1 rounded-lg border-none bg-muted p-4 text-sm outline-none placeholder:text-accent-gray focus-visible:outline-accent-green-100"
           placeholder="Name"
           required
         />
@@ -21,7 +21,7 @@ export default function ContactForm() {
           type="email"
           name="email"
           id="email"
-          className="flex-1 rounded-lg border-none bg-muted p-4 text-sm outline-none placeholder:text-accent-gray focus-visible:outline-accent-green-100"
+          className="w-0 flex-1 rounded-lg border-none bg-muted p-4 text-sm outline-none placeholder:text-accent-gray focus-visible:outline-accent-green-100"
           placeholder="Email"
           autoComplete="off"
           required
