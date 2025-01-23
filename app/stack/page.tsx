@@ -1,8 +1,26 @@
 import React from "react";
 import techStack from "@/data/stack.json";
 import Image from "next/image";
+import { Metadata } from "next";
 
-export default function page() {
+export const metadata: Metadata = {
+  title: "My Tools",
+  description:
+    "Explore the technologies powering my development workflow, for building scalable, user-centric applications.",
+  keywords: [
+    "Next.js",
+    "React",
+    "Node.js",
+    "JavaScript",
+    "TypeScript",
+    "Web Development",
+    "Frontend",
+    "Backend",
+    "Full-Stack",
+  ],
+};
+
+export default function StackPage() {
   return (
     <div className="flex flex-col gap-12">
       <h1 className="text-4xl font-medium sm:text-[42px] lg:text-5xl">

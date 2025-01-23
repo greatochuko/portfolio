@@ -7,8 +7,39 @@ import RecentProjectSection from "@/components/RecentProjectSection";
 import Image from "next/image";
 import Link from "next/link";
 import ImageGallery from "@/components/ImageGallery";
+import { Metadata } from "next";
 
-export default async function page({
+export async function generateMetadata({
+  params,
+}: {
+  params: { projectSlug: string };
+}): Promise<Metadata> {
+  const { projectSlug } = params;
+  const project = projects.find((project) => project.slug === projectSlug);
+
+  if (!project) {
+    return {
+      title: "Project Not Found",
+      description: "The project you are looking for does not exist.",
+    };
+  }
+
+  return {
+    title: project.title,
+    description: project.projectOverview,
+    openGraph: {
+      images: [
+        {
+          url: project.thumbnail,
+          width: 800,
+          height: 600,
+          alt: project.title + " thumbnail",
+        },
+      ],
+    },
+  };
+}
+export default async function ProjectDetailsPage({
   params,
 }: {
   params: Promise<{ projectSlug: string }>;

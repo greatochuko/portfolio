@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     template: "%s - Great Ogheneochuko",
   },
   description:
-    "Explore Great Ogheneochuko's portfolio showcasing innovative web development projects, including scalable full-stack applications and user-focused designs. Specializing in Next.js, React, Node.js, and TypeScript for dynamic, high-performing web solutions.",
+    "Explore Great Ogheneochuko's portfolio of innovative web projects, featuring full-stack apps and user-focused designs",
 };
 
 export default function RootLayout({

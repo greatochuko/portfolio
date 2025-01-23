@@ -34,7 +34,7 @@ const educationList = [
 export const metadata: Metadata = {
   title: "About Me",
   description:
-    "Learn more about me - a passionate web developer with expertise in creating dynamic full-stack applications and user-focused designs. With a strong foundation in Next.js, React, and Node.js, I thrive on delivering innovative and scalable solutions for the modern web.",
+    "Learn more about me, a web developer skilled in full-stack apps and user-focused designs using modern technologies to create scalable web solutions.",
 };
 
 export default function AboutPage() {

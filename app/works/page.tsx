@@ -6,10 +6,10 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "My Works",
   description:
-    "Explore a showcase of my best projects, from scalable full-stack applications to responsive web designs. Crafted with modern technologies like Next.js, React, and Node.js, these works reflect my expertise in building efficient, user-friendly, and performance-optimized solutions.",
+    "Explore my best projects, from scalable full-stack apps to responsive web designs, reflecting my expertise in efficient solutions.",
 };
 
-export default function page() {
+export default function WorksPage() {
   const freelanceProjects = projects.filter(
     (project) => project.type === "freelance",
   );
