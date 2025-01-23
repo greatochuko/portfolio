@@ -34,7 +34,7 @@ export default function ContactPage() {
   return (
     <div className="flex flex-col gap-12">
       <h1 className="text-4xl font-medium sm:text-[42px] lg:text-5xl">
-        My Tech Toolbox
+        Let&apos; Connect!
       </h1>
 
       <div className="flex flex-col gap-12 lg:flex-row">
@@ -63,6 +63,7 @@ export default function ContactPage() {
                 <li key={link.name}>
                   <Link
                     href={link.href}
+                    target="_blank"
                     className="group flex items-center gap-2"
                   >
                     <link.icon className="h-4 w-4 duration-300 group-hover:scale-125 group-hover:text-accent-green-100" />{" "}
