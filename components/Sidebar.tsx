@@ -35,7 +35,8 @@ const navLinks = [
   },
   {
     name: "Resume",
-    href: "/my-resume",
+    href: "/great_ogheneochuko_resume.pdf",
+    target: "_blank",
     icon: FaFileDownload,
   },
 ];
@@ -101,6 +102,7 @@ export default function Sidebar() {
           <Link
             key={navLink.name}
             href={navLink.href}
+            target={navLink.target}
             className={`group flex items-center gap-4 rounded-lg p-3 px-4 text-sm duration-300 ${
               pathname.startsWith(navLink.href)
                 ? "bg-muted font-medium text-foreground"
@@ -123,6 +125,7 @@ export default function Sidebar() {
           <Link
             key={i}
             href={socialLink.href}
+            target="_blank"
             className="group flex items-center gap-2 p-3 text-sm text-accent-gray duration-300 lg:justify-center"
           >
             <socialLink.icon className="h-4 w-4 text-accent-gray duration-300 group-hover:scale-125 group-hover:text-accent-green-100" />

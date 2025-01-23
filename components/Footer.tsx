@@ -13,7 +13,8 @@ export default function Footer() {
       </Link>
       <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
         <Link
-          href={"/my-resume"}
+          href={"/great_ogheneochuko_resume.pdf"}
+          target="_blank"
           className="flex-center gap-2 text-sm text-accent-green-100 hover:underline sm:order-2"
         >
           <FaFileDownload className="h-4 w-4" />
