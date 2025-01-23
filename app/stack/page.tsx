@@ -2,6 +2,7 @@ import React from "react";
 import techStack from "@/data/stack.json";
 import Image from "next/image";
 import { Metadata } from "next";
+import LetsConnectSection from "@/components/LetsConnectSection";
 
 export const metadata: Metadata = {
   title: "My Tools",
@@ -59,6 +60,7 @@ export default function StackPage() {
           </li>
         ))}
       </ul>
+      <LetsConnectSection />
     </div>
   );
 }

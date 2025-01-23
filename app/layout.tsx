@@ -14,6 +14,7 @@ export const metadata: Metadata = {
   },
   description:
     "Explore Great Ogheneochuko's portfolio of innovative web projects, featuring full-stack apps and user-focused designs",
+  metadataBase: new URL(process.env.BASE_URL!),
 };
 
 export default function RootLayout({
@@ -26,11 +27,11 @@ export default function RootLayout({
       <body
         className={`${funnelDisplay.className} bg-background text-foreground antialiased`}
       >
-        <main className="flex flex-col min-[820px]:flex-row">
+        <main className="flex min-h-dvh flex-col min-[820px]:flex-row">
           <Header />
           <Sidebar />
-          <div className="flex-1">
-            <div className="mx-auto w-[90%] max-w-6xl flex-1 py-12">
+          <div className="flex flex-1 flex-col">
+            <div className="mx-auto flex w-[90%] max-w-6xl flex-1 flex-col gap-12 py-12">
               {children}
               <Footer />
             </div>

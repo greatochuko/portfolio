@@ -1,3 +1,4 @@
+import LetsConnectSection from "@/components/LetsConnectSection";
 import ViewAllButton from "@/components/ViewAllButton";
 import { Metadata } from "next";
 import React from "react";
@@ -127,6 +128,7 @@ export default function AboutPage() {
           </ViewAllButton>
         </div>
       </section>
+      <LetsConnectSection />
     </div>
   );
 }

@@ -8,13 +8,14 @@ import Image from "next/image";
 import Link from "next/link";
 import ImageGallery from "@/components/ImageGallery";
 import { Metadata } from "next";
+import LetsConnectSection from "@/components/LetsConnectSection";
 
 export async function generateMetadata({
   params,
 }: {
-  params: { projectSlug: string };
+  params: Promise<{ projectSlug: string }>;
 }): Promise<Metadata> {
-  const { projectSlug } = params;
+  const { projectSlug } = await params;
   const project = projects.find((project) => project.slug === projectSlug);
 
   if (!project) {
@@ -132,6 +133,8 @@ export default async function ProjectDetailsPage({
         <ViewAllButton href={project.liveUrl}>Live Site</ViewAllButton>
       </div>
       <RecentProjectSection title="Other Projects" />
+
+      <LetsConnectSection />
     </div>
   );
 }

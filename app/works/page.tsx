@@ -2,6 +2,7 @@ import React from "react";
 import projects from "@/data/projects.json";
 import Project from "@/components/Project";
 import { Metadata } from "next";
+import LetsConnectSection from "@/components/LetsConnectSection";
 
 export const metadata: Metadata = {
   title: "My Works",
@@ -46,6 +47,7 @@ export default function WorksPage() {
           ))}
         </div>
       </div>
+      <LetsConnectSection />
     </div>
   );
 }

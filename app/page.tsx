@@ -1,4 +1,5 @@
 import AboutSection from "@/components/AboutSection";
+import LetsConnectSection from "@/components/LetsConnectSection";
 import RecentProjectSection from "@/components/RecentProjectSection";
 import StackSection from "@/components/StackSection";
 
@@ -8,6 +9,7 @@ export default function Homepage() {
       <AboutSection />
       <RecentProjectSection />
       <StackSection />
+      <LetsConnectSection />
     </div>
   );
 }
