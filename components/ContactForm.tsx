@@ -2,8 +2,9 @@
 import React from "react";
 
 export default function ContactForm() {
-  function handleSubmit(e: React.FormEvent) {
+  function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
+    e.currentTarget.reset();
   }
   return (
     <form onSubmit={handleSubmit} className="flex flex-col gap-3">
@@ -14,6 +15,7 @@ export default function ContactForm() {
           id="name"
           className="flex-1 rounded-lg border-none bg-muted p-4 text-sm outline-none placeholder:text-accent-gray focus-visible:outline-accent-green-100"
           placeholder="Name"
+          required
         />
         <input
           type="email"
@@ -22,6 +24,7 @@ export default function ContactForm() {
           className="flex-1 rounded-lg border-none bg-muted p-4 text-sm outline-none placeholder:text-accent-gray focus-visible:outline-accent-green-100"
           placeholder="Email"
           autoComplete="off"
+          required
         />
       </div>
       <textarea
@@ -30,6 +33,7 @@ export default function ContactForm() {
         className="resize-none rounded-lg border-none bg-muted p-4 text-sm outline-none placeholder:text-accent-gray focus-visible:outline-accent-green-100"
         placeholder="Write a message..."
         rows={8}
+        required
       ></textarea>
       <button
         type="submit"
