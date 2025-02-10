@@ -56,7 +56,9 @@ export default async function ProjectDetailsPage({
       <div className="flex flex-wrap items-center gap-4 text-sm text-accent-gray">
         <BackButton href="/works">Back to Works</BackButton>
         <hr className="flex-1 border-dashed border-[#666]" />
-        <ViewAllButton href={project.liveUrl}>Live Site</ViewAllButton>
+        <ViewAllButton href={project.liveUrl} target="_blank">
+          Live Site
+        </ViewAllButton>
       </div>
       <h1 className="text-3xl font-medium sm:text-4xl sm:text-[42px] lg:text-5xl">
         {project.title}
@@ -105,6 +107,7 @@ export default async function ProjectDetailsPage({
               <span className="font-medium text-foreground">Source Code: </span>
               <Link
                 href={project.githubUrl}
+                target="_blank"
                 className="text-accent-green-100 hover:underline"
               >
                 {project.githubUrl}
@@ -114,6 +117,7 @@ export default async function ProjectDetailsPage({
               <span className="font-medium text-foreground">Live Site: </span>
               <Link
                 href={project.liveUrl}
+                target="_blank"
                 className="text-accent-green-100 hover:underline"
               >
                 {project.liveUrl}

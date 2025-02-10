@@ -1,12 +1,45 @@
 [
   {
+    "title": "LearnEx",
+    "thumbnail": "/learnex.png",
+    "thumbnailPlaceholder": "/learnex-placeholder.png",
+    "subtitle": "Online learning platform",
+    "type": "personal",
+    "images": [
+      "/learnex.png",
+      "/learnex-1.png",
+      "/learnex-2.png",
+      "/learnex-3.png",
+      "/learnex-4.png",
+      "/learnex-5.png",
+      "/learnex-6.png",
+      "/learnex-7.png",
+      "/learnex-8.png",
+      "/learnex-9.png",
+      "/learnex-10.png",
+      "/learnex-11.png",
+      "/learnex-12.png",
+      "/learnex-13.png"
+    ],
+    "slug": "learnex",
+    "liveUrl": "https://learnex.vercel.app",
+    "githubUrl": "https://github.com/greatochuko/learnex",
+    "projectOverview": "LearnEx is a comprehensive learning management system (LMS) designed to empower educators and learners with seamless course creation, interactive learning experiences, and efficient progress tracking. It focuses on providing an engaging and user-friendly interface, and secure access to educational resources. The platform is built for scalability, making it suitable for institutions, businesses, and independent educators of any size.",
+    "techStack": {
+      "frontend": "React.js, TypeScript",
+      "backend": "Node.js, Express.js",
+      "database": "MongoDB",
+      "otherTools": "JWT for authentication, Tailwind CSS for styling"
+    }
+  },
+  {
     "title": "Shopparel",
-    "thumbnail": "/shopparel.jpg",
-    "thumbnailPlaceholder": "/shopparel-placeholder.jpg",
+    "thumbnail": "/shopparel.png",
+    "thumbnailPlaceholder": "/shopparel-placeholder.png",
     "subtitle": "Fashion e-commerce website",
     "type": "personal",
     "images": [
-      "/shopparel.jpg",
+      "/shopparel.png",
       "/shopparel-1.png",
       "/shopparel-2.png",
       "/shopparel-3.png",

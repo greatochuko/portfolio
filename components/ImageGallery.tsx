@@ -24,7 +24,7 @@ export default function ImageGallery({ images }: { images: string[] }) {
               src={image}
               alt="Project image"
               fill
-              sizes="(max-width: 768px ) 90vw, (max-width: 1280px ) 40vw, 30vw"
+              sizes="(max-width: 640px) 90vw, (max-width: 1280px) 45vw, 30vw"
               className="object-cover"
             />
             <button
