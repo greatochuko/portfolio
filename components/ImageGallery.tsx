@@ -15,7 +15,7 @@ export default function ImageGallery({ images }: { images: string[] }) {
   return (
     <>
       <div className="grid grid-cols-[repeat(auto-fill,_minmax(280px,_1fr))] gap-4">
-        {images.map((image, index) => (
+        {images.slice(0, 6).map((image, index) => (
           <div
             key={index}
             className="group relative aspect-[1.5] overflow-hidden rounded-md bg-muted"
@@ -27,6 +27,11 @@ export default function ImageGallery({ images }: { images: string[] }) {
               sizes="(max-width: 640px) 90vw, (max-width: 1280px) 45vw, 30vw"
               className="object-cover"
             />
+            {index === 5 && images.length > 6 && (
+              <div className="flex-center absolute left-0 top-0 h-full w-full bg-black/70">
+                + {images.length - 6} more
+              </div>
+            )}
             <button
               onClick={() => {
                 setFullScreenMode(true);

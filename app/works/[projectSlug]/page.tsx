@@ -105,13 +105,17 @@ export default async function ProjectDetailsPage({
           <ul className="flex flex-col gap-2 text-sm sm:text-base">
             <li className="text-accent-gray">
               <span className="font-medium text-foreground">Source Code: </span>
-              <Link
-                href={project.githubUrl}
-                target="_blank"
-                className="text-accent-green-100 hover:underline"
-              >
-                {project.githubUrl}
-              </Link>
+              {project.githubUrl ? (
+                <Link
+                  href={project.githubUrl}
+                  target="_blank"
+                  className="text-accent-green-100 hover:underline"
+                >
+                  {project.githubUrl}
+                </Link>
+              ) : (
+                <span className="text-muted-foreground">N/A</span>
+              )}
             </li>
             <li className="text-accent-gray">
               <span className="font-medium text-foreground">Live Site: </span>
