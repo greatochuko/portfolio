@@ -1,5 +1,22 @@
 [
   {
+    "title": "Clinic Lead Stack",
+    "thumbnail": "/cls.png",
+    "thumbnailPlaceholder": "/cls.png",
+    "subtitle": "Chiropractic content & patient engagement platform",
+    "type": "freelance",
+    "images": ["/cls-1.png", "/cls-2.png", "/cls-3.png", "/cls-4.png"],
+    "slug": "clinic-lead-stack",
+    "liveUrl": "https://clinicleadstack.com",
+    "projectOverview": "Clinic Lead Stack helps chiropractors simplify patient education and engagement. The platform provides a calendar-first dashboard, AI-powered script generation for spinal health and wellness tips, newsletter creation from videos, and branded reels remixing. With a central knowledge base, every output is personalized to match a clinic's voice, style, and brand guidelines.",
+    "techStack": {
+      "frontend": "Next.js, TypeScript, Tailwind CSS",
+      "backend": "Next.js server actions & API routes",
+      "database": "MongoDB",
+      "otherTools": "JWT for authentication, Resend for email delivery, Stripe for payments, Instagram Reels import"
+    }
+  },
+  {
     "title": "ScoutSesh",
     "thumbnail": "/scoutsesh.jpg",
     "thumbnailPlaceholder": "/scoutsesh-placeholder.png",

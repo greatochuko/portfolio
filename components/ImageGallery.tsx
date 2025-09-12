@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import { MdFullscreen } from "react-icons/md";
 import FullScreenImageGallery from "./FullScreenImageGallery";
+import { LuZoomIn } from "react-icons/lu";
 
 export default function ImageGallery({ images }: { images: string[] }) {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -37,9 +38,9 @@ export default function ImageGallery({ images }: { images: string[] }) {
                 setFullScreenMode(true);
                 setCurrentIndex(index);
               }}
-              className="invisible absolute right-2 top-2 rounded-full bg-black/70 p-2 opacity-0 duration-300 hover:bg-black group-hover:visible group-hover:opacity-100"
+              className="invisible absolute left-0 top-0 flex h-full w-full items-center justify-center p-2 opacity-0 duration-300 hover:bg-black/50 group-hover:visible group-hover:opacity-100"
             >
-              <MdFullscreen className="h-6 w-6" />
+              <LuZoomIn className="h-6 w-6" />
             </button>
           </div>
         ))}
