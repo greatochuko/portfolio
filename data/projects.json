@@ -12,8 +12,40 @@
     "techStack": {
       "frontend": "Next.js, TypeScript, Tailwind CSS",
       "backend": "Next.js server actions & API routes",
-      "database": "MongoDB",
-      "otherTools": "JWT for authentication, Resend for email delivery, Stripe for payments, Instagram Reels import"
+      "database": "PostgreSQL (Prisma)",
+      "otherTools": "JWT for authentication, Resend for email delivery, Instagram API & YouTube API for reel upload and management"
+    }
+  },
+  {
+    "title": "REC LiiGA",
+    "thumbnail": "/recliiga.png",
+    "thumbnailPlaceholder": "/recliiga-placeholder.png",
+    "subtitle": "Recreational sports league platform",
+    "type": "freelance",
+    "images": [
+      "/recliiga.png",
+      "/recliiga-1.png",
+      "/recliiga-2.png",
+      "/recliiga-3.png",
+      "/recliiga-4.png",
+      "/recliiga-5.png",
+      "/recliiga-6.png",
+      "/recliiga-7.png",
+      "/recliiga-8.png",
+      "/recliiga-10.png",
+      "/recliiga-11.png",
+      "/recliiga-12.png",
+      "/recliiga-13.png",
+      "/recliiga-14.png"
+    ],
+    "slug": "recliiga",
+    "liveUrl": "https://recliiga.com",
+    "projectOverview": "REC LiiGA is a free-to-use app designed to make recreational sports more fun and competitive by bringing the excitement of fantasy sports to drop-in games. It offers features like team drafting, player ratings, individual leaderboards, and event management, while helping organizers streamline league management and enhancing player engagement.",
+    "techStack": {
+      "frontend": "React.js, TypeScript, Tailwind CSS",
+      "backend": "Node.js, Express.js",
+      "database": "PostgreSQL (Prisma)",
+      "otherTools": "JWT for authentication, Cloud storage for media"
     }
   },
   {
