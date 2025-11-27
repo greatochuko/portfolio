@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     url: "https://greatochuko.com",
     title: "Great Ogheneochuko — Full-Stack Engineer",
     description:
-      "Building healthcare platforms, SaaS products & modern web apps with React, Node.js & TypeScript.",
+      "Building SaaS products & modern web apps with React, Node.js & TypeScript.",
     images: [
       {
         url: "/opengraph-image.png",
