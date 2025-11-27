@@ -2,7 +2,7 @@
 import Image from "next/image";
 import React from "react";
 import Link from "next/link";
-import logo from "@/public/logo.png";
+import logo from "@/public/logo.webp";
 import { usePathname } from "next/navigation";
 import { GoHomeFill } from "react-icons/go";
 import { RiProjectorFill } from "react-icons/ri";

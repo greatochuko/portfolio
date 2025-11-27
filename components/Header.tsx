@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
-import logo from "@/public/logo.png";
+import logo from "@/public/logo.webp";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { GoHomeFill } from "react-icons/go";
