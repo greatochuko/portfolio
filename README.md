@@ -2,7 +2,7 @@
 
 This is my personal developer portfolio, showcasing projects, skills, and experience as a **Full-Stack Web Developer**. Built with **Next.js**, **TypeScript**, **Tailwind CSS**, and deployed on **Vercel**.
 
-🔗 **Live Demo:** [greatochuko.vercel.app](https://greatochuko.vercel.app)
+🔗 **Live Demo:** [greatochuko.com](https://greatochuko.com)
 
 ✉️ **Email:** greatochuko123@gmail.com
 
