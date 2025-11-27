@@ -10,14 +10,14 @@
     "name": "TypeScript",
     "subTitle": "Typed Javascript",
     "description": "TypeScript is my go-to tool for writing maintainable and robust code. Its static typing helps catch errors early in development, improving code quality and enabling better collaboration across teams. I rely on its advanced type system to build scalable applications with confidence.",
-    "logo": "/typescript-logo.png",
+    "logo": "/typescript-logo.webp",
     "preview": true
   },
   {
     "name": "React",
     "subTitle": "JavaScript UI library",
     "description": "React is my preferred library for creating dynamic and interactive user interfaces. Its component-based architecture allows me to break down complex UIs into manageable pieces, while its virtual DOM ensures fast rendering and a seamless user experience.",
-    "logo": "/react-logo.png",
+    "logo": "/react-logo.webp",
     "preview": true
   },
   {
