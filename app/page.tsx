@@ -1,8 +1,5 @@
-"use client";
-
 import ProjectCard from "@/components/ProjectCard";
 import { projects } from "@/lib/projects";
-import { useEffect, useState } from "react";
 
 const stack = [
   {
@@ -18,42 +15,6 @@ const stack = [
 ];
 
 export default function Home() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
-
-  useEffect(() => {
-    const els = document.querySelectorAll<HTMLElement>("[data-reveal]");
-
-    if (!("IntersectionObserver" in window)) {
-      els.forEach((el) => el.classList.add("in"));
-      return;
-    }
-
-    const io = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("in");
-            io.unobserve(entry.target);
-          }
-        });
-      },
-      { threshold: 0.12, rootMargin: "0px 0px -40px 0px" },
-    );
-
-    els.forEach((el) => io.observe(el));
-    return () => io.disconnect();
-  }, []);
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Action handler logic here (e.g., Formspree, Resend, etc.)
-    console.log("Form submitted:", formData);
-  };
-
   return (
     <>
       <div
@@ -181,10 +142,7 @@ export default function Home() {
         {/* WORK */}
         <section id="work" className="border-t border-line px-[5%] py-20">
           <div className="mx-auto max-w-7xl">
-            <div
-              data-reveal
-              className="reveal mb-11 flex flex-wrap  justify-between gap-6"
-            >
+            <div className="mb-11 flex flex-wrap justify-between gap-6">
               <h2 className="font-display text-3xl font-semibold tracking-tight sm:text-4xl">
                 Shipped &amp; shipping
               </h2>
@@ -205,10 +163,7 @@ export default function Home() {
         {/* STACK */}
         <section id="stack" className="border-t border-line px-[5%] py-20">
           <div className="mx-auto max-w-7xl">
-            <div
-              data-reveal
-              className="reveal mb-11 flex flex-wrap items-baseline justify-between gap-6"
-            >
+            <div className="mb-11 flex flex-wrap items-baseline justify-between gap-6">
               <h2 className="font-display text-3xl font-semibold tracking-tight sm:text-4xl">
                 The toolkit
               </h2>
@@ -217,10 +172,7 @@ export default function Home() {
               </p>
             </div>
 
-            <div
-              data-reveal
-              className="reveal grid grid-cols-1 border-l border-t border-line sm:grid-cols-2 lg:grid-cols-4"
-            >
+            <div className="grid grid-cols-1 border-l border-t border-line sm:grid-cols-2 lg:grid-cols-4">
               {stack.map((col) => (
                 <div
                   key={col.label}
@@ -252,14 +204,11 @@ export default function Home() {
         {/* ABOUT */}
         <section id="about" className="border-t border-line px-[5%] py-20">
           <div className="mx-auto grid max-w-7xl grid-cols-1 gap-7 md:grid-cols-[0.9fr_1.4fr] md:gap-12">
-            <p
-              data-reveal
-              className="reveal font-display text-2xl font-medium leading-tight tracking-tight sm:text-3xl"
-            >
+            <p className="font-display text-2xl font-medium leading-tight tracking-tight sm:text-3xl">
               Good software feels <span className="text-cobalt">obvious</span>{" "}
               in hindsight. Getting there is the hard part.
             </p>
-            <div data-reveal className="reveal">
+            <div>
               <p className="max-w-2xl text-[17px] text-ink-soft">
                 I care about the parts most engineers skip past — the loading
                 state, the empty screen, the copy on an error message. Product
@@ -298,10 +247,7 @@ export default function Home() {
           className="border-t border-line bg-ink px-[5%] py-20 text-paper"
         >
           <div className="mx-auto max-w-7xl">
-            <div
-              data-reveal
-              className="reveal grid grid-cols-1 gap-12 lg:grid-cols-2"
-            >
+            <div className="grid grid-cols-1 gap-12 lg:grid-cols-2">
               {/* Info Column */}
               <div>
                 <h2 className="mb-4.5 max-w-md font-display text-4xl font-semibold leading-[1.04] tracking-tight sm:text-6xl">
@@ -345,10 +291,7 @@ export default function Home() {
 
               {/* Form Column */}
               <div className="flex flex-col gap-4">
-                <form
-                  onSubmit={handleSubmit}
-                  className="flex flex-col gap-4 font-mono text-sm"
-                >
+                <form className="flex flex-col gap-4 font-mono text-sm">
                   <div className="flex flex-col gap-1.5">
                     <label
                       htmlFor="name"
@@ -359,11 +302,8 @@ export default function Home() {
                     <input
                       type="text"
                       id="name"
+                      name="name"
                       required
-                      value={formData.name}
-                      onChange={(e) =>
-                        setFormData({ ...formData, name: e.target.value })
-                      }
                       className="w-full rounded-lg border border-[#2b2f26] bg-[#1a1d17] p-3 text-paper outline-hidden transition-colors focus:border-accent"
                       placeholder="Jane Doe"
                     />
@@ -379,11 +319,8 @@ export default function Home() {
                     <input
                       type="email"
                       id="email"
+                      name="email"
                       required
-                      value={formData.email}
-                      onChange={(e) =>
-                        setFormData({ ...formData, email: e.target.value })
-                      }
                       className="w-full rounded-lg border border-[#2b2f26] bg-[#1a1d17] p-3 text-paper outline-hidden transition-colors focus:border-accent"
                       placeholder="jane@example.com"
                     />
@@ -398,12 +335,9 @@ export default function Home() {
                     </label>
                     <textarea
                       id="message"
+                      name="message"
                       required
                       rows={4}
-                      value={formData.message}
-                      onChange={(e) =>
-                        setFormData({ ...formData, message: e.target.value })
-                      }
                       className="w-full resize-none rounded-lg border border-[#2b2f26] bg-[#1a1d17] p-3 text-paper outline-hidden transition-colors focus:border-accent"
                       placeholder="Let's talk about your project details..."
                     />
