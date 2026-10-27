@@ -44,7 +44,7 @@ const navLinks = [
 
 const socialLinks = [
   {
-    href: "https://linkedin.com/in/greatochuko",
+    href: "https://linkedin.com/in/greatochuko123",
     icon: FaLinkedin,
     name: "LinkedIn",
   },

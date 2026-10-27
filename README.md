@@ -6,8 +6,8 @@ This is my personal developer portfolio, showcasing projects, skills, and experi
 
 ✉️ **Email:** greatochuko123@gmail.com
 
-👤 **LinkedIn:** [linkedin.com/in/greatochuko](https://linkedin.com/in/greatochuko)
+👤 **LinkedIn:** [linkedin.com/in/greatochuko123](https://linkedin.com/in/greatochuko123)
 
 </> **Github:** [github.com/greatochuko](https://github.com/greatochuko)
 
-☎︎ **Whatsapp:** +2347048078103
+☎︎ **Whatsapp:** [+2347048078103](tel:+2347048078103)
