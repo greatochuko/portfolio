@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist_Mono, Open_Sans } from "next/font/google";
 import "./globals.css";
+import Header from "@/components/home/Header";
 
 const geistSans = Open_Sans({
   variable: "--font-open-sans",
@@ -23,8 +24,11 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="bg-background mx-auto flex min-h-full w-9/10 max-w-6xl flex-col py-4 sm:py-8">
+      <body className="bg-background mx-auto flex min-h-full w-9/10 max-w-7xl flex-col py-4 sm:py-8">
+        <Header />
         {children}
+        <footer></footer>
+
         <div className="border-muted fixed top-4 left-4 hidden aspect-square w-6 rounded-tl-md border-2 border-r-0 border-b-0 sm:block" />
         <div className="border-muted fixed top-4 right-4 hidden aspect-square w-6 rotate-90 rounded-tl-md border-2 border-r-0 border-b-0 sm:block" />
         <div className="border-muted fixed right-4 bottom-4 hidden aspect-square w-6 rotate-180 rounded-tl-md border-2 border-r-0 border-b-0 sm:block" />

@@ -90,7 +90,7 @@ export default function Hero() {
       </div>
 
       {/* Stats */}
-      <div className="border-border bg-border grid w-full flex-1 grid-cols-2 gap-px self-center overflow-hidden rounded-2xl border md:grid-cols-4 lg:max-w-110 lg:grid-cols-2">
+      <div className="border-border bg-border grid w-full flex-1 grid-cols-2 gap-px self-center overflow-hidden rounded-2xl border md:grid-cols-4 lg:max-w-130 lg:grid-cols-2">
         {highlights.map((item) => (
           <div
             key={item.label}

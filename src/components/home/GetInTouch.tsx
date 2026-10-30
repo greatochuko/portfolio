@@ -1,12 +1,6 @@
 import Link from "next/link";
 import ContactForm from "./ContactForm";
-
-const contactLinks = [
-  { label: "LinkedIn", href: "https://linkedin.com/in/greatochuko123" },
-  { label: "Email", href: "mailto:greatochuko123@gmail.com" },
-  { label: "WhatsApp", href: "https://wa.me/+2347048078103" },
-  { label: "Github", href: "https://github.com/greatochuko" },
-];
+import { contactLinks } from "@/lib/data";
 
 export default function GetInTouch() {
   return (
