@@ -25,10 +25,10 @@ const highlights = [
 
 export default function Hero() {
   return (
-    <section className="flex flex-col gap-12 py-16 sm:py-20 lg:flex-row lg:gap-20 lg:py-28">
+    <section className="flex flex-col gap-8 py-8 sm:gap-12 sm:py-12 lg:flex-row lg:gap-16 lg:py-16">
       {/* Intro */}
       <div className="flex flex-1 flex-col justify-center">
-        <div className="mb-8 flex flex-col gap-4">
+        <div className="mb-6 flex flex-col gap-4">
           <Image
             src="/images/profile-picture.png"
             alt="Great Ogheneochuko"
@@ -48,20 +48,24 @@ export default function Hero() {
             Software Engineer · Cloud Security
           </p>
 
-          <h1 className="text-4xl leading-tight font-semibold tracking-tight sm:text-5xl lg:text-6xl">
+          <h1 className="text-3xl leading-tight font-semibold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl">
             I build software
             <br />
-            <span className="text-blue-500">that holds up.</span>
+            <span className="text-accent">that holds up.</span>
           </h1>
 
-          <p className="text-muted mt-6 text-sm leading-7 sm:text-base">
-            I&apos;m Great Ogheneochuko, a Software Engineer with 3+ years of
-            experience building and shipping full-stack applications. I&apos;ve
-            pushed 10+ production apps, working across TypeScript, backend
-            systems, PostgreSQL, Docker, and cloud infrastructure.
+          <p className="text-secondary mt-6 text-sm leading-7 sm:text-base">
+            I&apos;m{" "}
+            <span className="text-foreground font-medium">
+              Great Ogheneochuko
+            </span>
+            , a Software Engineer with 3+ years of experience building and
+            shipping full-stack applications. I&apos;ve pushed 10+ production
+            apps, working across TypeScript, backend systems, PostgreSQL,
+            Docker, and cloud infrastructure.
           </p>
 
-          <p className="text-muted mt-4 text-sm leading-7 sm:text-base">
+          <p className="text-secondary mt-4 text-sm leading-7 sm:text-base">
             I&apos;m currently going deeper into Go, cloud security, application
             security, IAM, and secure system design. I like understanding
             systems from the ground up and figuring out where they can break.

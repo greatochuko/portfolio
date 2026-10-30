@@ -13,12 +13,12 @@ export default function Header() {
 
   return (
     <header>
-      <nav className="flex flex-wrap items-center justify-between gap-4 gap-y-2 font-mono text-sm">
+      <nav className="flex flex-wrap items-center justify-between gap-2 gap-y-2 font-mono text-sm sm:gap-4">
         <Link href={"/"} className="uppercase">
           Great Ochuko
         </Link>
 
-        <ul className="flex items-center gap-4">
+        <ul className="flex items-center gap-2 sm:gap-4">
           {navlinks.map((navlink, i) => {
             const isActive = pathname === navlink.href;
 
@@ -26,7 +26,7 @@ export default function Header() {
               <li key={i}>
                 <Link
                   href={navlink.href}
-                  className={`block p-2 duration-200 ${isActive ? "text-foreground" : "text-muted hover:text-foreground"}`}
+                  className={`block p-2 duration-200 ${isActive ? "text-foreground font-medium" : "text-muted hover:text-foreground"}`}
                 >
                   {navlink.label}
                 </Link>
