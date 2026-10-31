@@ -20,7 +20,10 @@ export default function Header() {
 
         <ul className="flex items-center gap-2 sm:gap-4">
           {navlinks.map((navlink, i) => {
-            const isActive = pathname === navlink.href;
+            const isActive =
+              navlink.href === "/"
+                ? pathname === navlink.href
+                : pathname.startsWith(navlink.href);
 
             return (
               <li key={i}>
