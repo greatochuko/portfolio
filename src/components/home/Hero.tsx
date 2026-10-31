@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const highlights = [
   {
@@ -27,8 +28,8 @@ export default function Hero() {
   return (
     <section className="flex flex-col gap-8 py-8 sm:gap-12 sm:py-12 lg:flex-row lg:gap-16 lg:py-16">
       {/* Intro */}
-      <div className="flex flex-1 flex-col justify-center">
-        <div className="mb-6 flex flex-col gap-4">
+      <div className="flex flex-1 flex-col items-center justify-center text-center lg:items-start lg:text-left">
+        <div className="mb-6 flex flex-col items-center gap-4 lg:items-start">
           <Image
             src="/images/profile-picture.png"
             alt="Great Ogheneochuko"
@@ -43,12 +44,12 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="max-w-2xl">
+        <div className="max-w-3xl">
           <p className="text-muted mb-4 font-mono text-sm">
             Software Engineer · Cloud Security
           </p>
 
-          <h1 className="text-3xl leading-tight font-semibold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl">
+          <h1 className="text-2xl leading-tight font-semibold tracking-tight sm:text-3xl md:text-4xl lg:text-5xl">
             I build software
             <br />
             <span className="text-accent">that holds up.</span>
@@ -59,33 +60,31 @@ export default function Hero() {
             <span className="text-foreground font-medium">
               Great Ogheneochuko
             </span>
-            , a Software Engineer with 3+ years of experience building and
-            shipping full-stack applications. I&apos;ve pushed 10+ production
-            apps, working across TypeScript, backend systems, PostgreSQL,
-            Docker, and cloud infrastructure.
+            , a software engineer with 3+ years of experience and 10+ production
+            apps shipped across TypeScript, PostgreSQL, Docker, and the cloud.
           </p>
 
           <p className="text-secondary mt-4 text-sm leading-7 sm:text-base">
-            I&apos;m currently going deeper into Go, cloud security, application
-            security, IAM, and secure system design. I like understanding
-            systems from the ground up and figuring out where they can break.
+            Now I&apos;m going deep on Go and cloud security, from IAM to secure
+            system design. I like understanding systems from the ground up and
+            finding where they break.
           </p>
         </div>
 
         <div className="mt-8 flex items-center gap-3">
-          <a
+          <Link
             href="/work"
             className="bg-foreground text-background rounded-lg px-5 py-3 text-sm font-semibold transition-opacity hover:opacity-80"
           >
             View my work
-          </a>
+          </Link>
 
-          <a
+          <Link
             href="/contact"
             className="border-border hover:bg-muted/10 rounded-lg border px-5 py-3 text-sm font-semibold transition-colors"
           >
             Get in touch
-          </a>
+          </Link>
         </div>
       </div>
 
