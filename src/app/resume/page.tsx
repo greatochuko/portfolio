@@ -42,15 +42,15 @@ export default function ResumePage() {
         </div>
 
         <div className="flex flex-wrap gap-3">
-          <a
+          <Link
             href={resume.pdfUrl}
             download
             className="bg-foreground text-background border-foreground group flex items-center gap-2 rounded-full border px-5 py-2 text-sm font-medium duration-300 hover:opacity-80"
           >
             Download PDF
             <DownloadIcon className="size-4 duration-300 group-hover:translate-y-0.5" />
-          </a>
-          <a
+          </Link>
+          <Link
             href={resume.pdfUrl}
             target="_blank"
             rel="noopener noreferrer"
@@ -58,7 +58,7 @@ export default function ResumePage() {
           >
             View PDF
             <ArrowUpRight className="size-4 duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-          </a>
+          </Link>
         </div>
       </section>
 
