@@ -7,6 +7,8 @@
     --foreground: #171717;
     --border: #e5e5e5;
     --accent: #4096f2;
+    --success: #15803d;
+    --error: #dc2626;
 }
 
 @theme inline {
@@ -16,6 +18,8 @@
     --color-secondary: var(--secondary);
     --color-muted: var(--muted);
     --color-border: var(--border);
+    --color-success: var(--success);
+    --color-error: var(--error);
     --font-open-sans: var(--font-open-sans);
     --font-mono: var(--font-geist-mono);
 }
@@ -26,6 +30,8 @@
         --foreground: #ededed;
         --secondary: #b3b3b3;
         --border: #262626;
+        --success: #4ade80;
+        --error: #f87171;
     }
 }
 

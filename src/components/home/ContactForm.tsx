@@ -1,40 +1,21 @@
 "use client";
 
-import { useState } from "react";
+import { useActionState } from "react";
+import { sendContactMessage, type ContactState } from "@/actions/contact";
 
-type Status = "idle" | "sending" | "success" | "error";
+const initialState: ContactState = { status: "idle" };
 
 const inputClasses =
   "border-border bg-background placeholder:text-muted focus:border-foreground w-full rounded-md border px-3 py-2 text-sm outline-none duration-200 disabled:opacity-60";
 
 export default function ContactForm() {
-  const [status, setStatus] = useState<Status>("idle");
-
-  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
-    e.preventDefault();
-    const form = e.currentTarget;
-    setStatus("sending");
-
-    try {
-      const res = await fetch("/api/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(Object.fromEntries(new FormData(form))),
-      });
-
-      if (!res.ok) throw new Error("Request failed");
-
-      form.reset();
-      setStatus("success");
-    } catch {
-      setStatus("error");
-    }
-  }
-
-  const isSending = status === "sending";
+  const [state, formAction, isPending] = useActionState(
+    sendContactMessage,
+    initialState,
+  );
 
   return (
-    <form onSubmit={handleSubmit} className="flex flex-col gap-4">
+    <form action={formAction} className="flex flex-col gap-4">
       <div className="flex flex-col gap-4 sm:flex-row">
         <div className="flex flex-1 flex-col gap-1.5">
           <label htmlFor="name" className="text-secondary text-sm font-medium">
@@ -45,7 +26,9 @@ export default function ContactForm() {
             name="name"
             type="text"
             required
-            disabled={isSending}
+            maxLength={100}
+            disabled={isPending}
+            defaultValue={state.values?.name}
             placeholder="Your name"
             className={inputClasses}
           />
@@ -60,7 +43,9 @@ export default function ContactForm() {
             name="email"
             type="email"
             required
-            disabled={isSending}
+            maxLength={254}
+            disabled={isPending}
+            defaultValue={state.values?.email}
             placeholder="you@example.com"
             className={inputClasses}
           />
@@ -76,7 +61,9 @@ export default function ContactForm() {
           name="message"
           required
           rows={5}
-          disabled={isSending}
+          maxLength={5000}
+          disabled={isPending}
+          defaultValue={state.values?.message}
           placeholder="What's on your mind?"
           className={`${inputClasses} resize-none`}
         />
@@ -95,23 +82,19 @@ export default function ContactForm() {
       <div className="flex items-center gap-4">
         <button
           type="submit"
-          disabled={isSending}
+          disabled={isPending}
           className="bg-foreground text-background rounded-md px-5 py-2 text-sm font-medium duration-200 hover:opacity-80 disabled:cursor-not-allowed disabled:opacity-60"
         >
-          {isSending ? "Sending..." : "Send message"}
+          {isPending ? "Sending..." : "Send message"}
         </button>
 
-        <p role="status" className="text-sm">
-          {status === "success" && (
-            <span className="text-secondary">
-              Thanks! I&apos;ll get back to you soon.
-            </span>
-          )}
-          {status === "error" && (
-            <span className="text-secondary">
-              Something went wrong. Please try again or email me directly.
-            </span>
-          )}
+        <p
+          role="status"
+          className={`text-sm ${
+            state.status === "error" ? "text-error" : "text-success"
+          }`}
+        >
+          {state.status !== "idle" && state.message}
         </p>
       </div>
     </form>
