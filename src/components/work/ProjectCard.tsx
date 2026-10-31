@@ -5,7 +5,13 @@ import ArrowUpRight from "../ui/ArrowUpRight";
 
 type Project = (typeof projects)[number];
 
-export default function ProjectCard({ project }: { project: Project }) {
+export default function ProjectCard({
+  project,
+  eager,
+}: {
+  project: Project;
+  eager?: boolean;
+}) {
   return (
     <Link
       href={`/work/${project.slug}`}
@@ -18,6 +24,7 @@ export default function ProjectCard({ project }: { project: Project }) {
           fill
           sizes="(min-width: 768px) 50vw, 100vw"
           className="object-cover object-top duration-500 ease-out group-hover:scale-105"
+          loading={eager ? "eager" : "lazy"}
         />
       </div>
 

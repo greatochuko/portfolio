@@ -16,9 +16,9 @@ export default function Projects() {
       </div>
 
       <ul className="grid gap-x-6 gap-y-10 sm:gap-x-8 md:grid-cols-2">
-        {projects.slice(0, FEATURED_COUNT).map((project) => (
+        {projects.slice(0, FEATURED_COUNT).map((project, i) => (
           <li key={project.slug}>
-            <ProjectCard project={project} />
+            <ProjectCard project={project} eager={i < 2} />
           </li>
         ))}
       </ul>

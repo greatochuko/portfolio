@@ -29,9 +29,9 @@ export default function WorkPage() {
 
       <section className="py-8 sm:py-12 lg:py-16">
         <ul className="grid gap-x-6 gap-y-10 sm:gap-x-8 sm:gap-y-12 md:grid-cols-2 xl:grid-cols-3">
-          {projects.map((project) => (
+          {projects.map((project, i) => (
             <li key={project.slug}>
-              <ProjectCard project={project} />
+              <ProjectCard project={project} eager={i < 2} />
             </li>
           ))}
         </ul>
