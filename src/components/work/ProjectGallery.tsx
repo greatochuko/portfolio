@@ -215,7 +215,7 @@ export default function ProjectGallery({ images, title }: Props) {
                 alt={`${title} screenshot ${i + 1}`}
                 fill
                 sizes="(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw"
-                className="bg-accent rounded-xl object-cover object-top p-2 duration-500 ease-out group-hover:scale-105"
+                className="rounded-xl object-cover object-top duration-500 ease-out group-hover:scale-105"
               />
               <span className="absolute inset-0 flex items-center justify-center bg-black/0 duration-300 group-hover:bg-black/30 group-focus-visible:bg-black/30">
                 <span className="bg-background text-foreground flex size-11 scale-90 items-center justify-center rounded-full opacity-0 duration-300 group-hover:scale-100 group-hover:opacity-100 group-focus-visible:scale-100 group-focus-visible:opacity-100">
