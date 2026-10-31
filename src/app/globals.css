@@ -1,6 +1,7 @@
 @import "tailwindcss";
 
 :root {
+    color-scheme: light;
     --background: #fff;
     --muted: #999;
     --secondary: #555;
@@ -24,8 +25,10 @@
     --font-mono: var(--font-geist-mono);
 }
 
+/* System: follow the OS unless the user explicitly picked light */
 @media (prefers-color-scheme: dark) {
-    :root {
+    :root:not([data-theme="light"]) {
+        color-scheme: dark;
         --background: #0f0f0f;
         --foreground: #ededed;
         --secondary: #b3b3b3;
@@ -33,6 +36,17 @@
         --success: #4ade80;
         --error: #f87171;
     }
+}
+
+/* Explicit dark */
+:root[data-theme="dark"] {
+    color-scheme: dark;
+    --background: #0f0f0f;
+    --foreground: #ededed;
+    --secondary: #b3b3b3;
+    --border: #262626;
+    --success: #4ade80;
+    --error: #f87171;
 }
 
 body {

@@ -32,8 +32,8 @@ export default function Hero() {
           <Image
             src="/images/profile-picture.png"
             alt="Great Ogheneochuko"
-            width={72}
-            height={72}
+            width={96}
+            height={96}
             priority
             className="rounded-2xl"
           />
