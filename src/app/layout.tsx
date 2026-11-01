@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
-
 export const metadata: Metadata = {
+  metadataBase: new URL("https://greatochuko.com"),
   title: "Great Ogheneochuko - Software Engineer",
   description:
     "Software engineer building scalable web apps with TypeScript, React, and Go. CTO at Clinic Lead Stack, with a growing focus on cloud security.",
@@ -22,8 +22,24 @@ export const metadata: Metadata = {
     title: "Great Ogheneochuko - Software Engineer",
     description:
       "Software engineer building scalable web apps with TypeScript, React, and Go.",
-    url: "https://greatochuko.com",
+    url: "/",
+    siteName: "Great Ogheneochuko",
     type: "website",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Great Ogheneochuko - Software Engineer",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Great Ogheneochuko - Software Engineer",
+    description:
+      "Software engineer building scalable web apps with TypeScript, React, and Go.",
+    images: ["/og-image.png"],
   },
 };
 
